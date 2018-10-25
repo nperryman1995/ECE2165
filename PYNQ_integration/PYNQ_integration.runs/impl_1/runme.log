@@ -1,0 +1,804 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Mitch/Documents/DCA/czxkbczhxbczjhxc'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_zscore_0_0/design_1_axi_zscore_0_0.dcp' for cell 'design_1_i/axi_zscore_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sws_2bits_tri_i[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sws_2bits_tri_i[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bits_tri_i[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bits_tri_i[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bits_tri_i[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btns_4bits_tri_i[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds_4bits_tri_o[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds_4bits_tri_o[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds_4bits_tri_o[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'leds_4bits_tri_o[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[4]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rgbleds_6bits_tri_o[5]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_m_clk[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_m_data_i'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pwm_audio_o[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pdm_audio_shutdown[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:34]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports hdmi_in_clk_p]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:34]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_clk_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_n[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_data_p[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_hpd[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_scl_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_in_ddc_sda_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_clk_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_clk_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_n[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_p[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_n[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_p[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_n[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_data_p[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_hpd[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_ddc_scl_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_ddc_sda_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[5]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[4]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[7]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[6]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[6]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA[7]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[5]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[4]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[7]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[6]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[6]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB[7]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d1_d0_tri_io[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d1_d0_tri_io[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[0]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[1]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[2]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[3]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[4]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[5]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[6]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[7]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[8]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[9]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[10]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_d13_d2_tri_io[11]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_sw_shield_scl_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iic_sw_shield_sda_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sw_shield_io1_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sw_shield_io0_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sw_shield_sck_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_sw_shield_ss_io'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux1_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux1_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux9_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux9_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux6_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux6_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux15_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux15_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux5_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux5_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux13_v_n'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vaux13_v_p'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_shield_sw_a5_a0_tri_io[5]'. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:157]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc:158]
+Finished Parsing XDC File [C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/constrs_1/imports/pynq-resources/pynq.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+18 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 677.105 ; gain = 375.133
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.545 . Memory (MB): peak = 687.738 ; gain = 10.633
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1fa5fb5f5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.211 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1fa5fb5f5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.262 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1b3091dca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.503 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 126 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1b3091dca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.577 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1b3091dca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.697 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b3091dca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.730 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1232.574 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1b3091dca
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.751 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: e978d7a1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+34 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1232.574 ; gain = 555.469
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1232.574 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c0c63c69
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1232.574 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b37c70f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ec3b6cfb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ec3b6cfb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1232.574 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1ec3b6cfb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1b6b16388
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b6b16388
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2176c3462
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a14cc810
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1a14cc810
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1c19b96d7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1bdfa9509
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1bdfa9509
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1232.574 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bdfa9509
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1232.574 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 204df2295
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 204df2295
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.605. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1e54f27dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+Phase 4.1 Post Commit Optimization | Checksum: 1e54f27dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1e54f27dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1e54f27dd
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 18e591ad2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18e591ad2
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+Ending Placer Task | Checksum: e7e8bfff
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1247.961 ; gain = 15.387
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.961 ; gain = 15.387
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.212 . Memory (MB): peak = 1255.531 ; gain = 7.570
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1255.531 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1255.531 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1255.531 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 48f8783e ConstDB: 0 ShapeSum: 9ef047c1 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: d01350c9
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1371.160 ; gain = 115.629
+Post Restoration Checksum: NetGraph: 4a742e1d NumContArr: 859f22ac Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: d01350c9
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1371.160 ; gain = 115.629
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: d01350c9
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.684 ; gain = 122.152
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: d01350c9
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.684 ; gain = 122.152
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: f6f34628
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1400.043 ; gain = 144.512
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.496  | TNS=0.000  | WHS=-0.167 | THS=-20.992|
+
+Phase 2 Router Initialization | Checksum: 153718622
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b096ce85
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 399
+ Number of Nodes with overlaps = 77
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.289  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 13b3e8561
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.289  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1636b1438
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+Phase 4 Rip-up And Reroute | Checksum: 1636b1438
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: f9119748
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.438  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: f9119748
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: f9119748
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+Phase 5 Delay and Skew Optimization | Checksum: f9119748
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 777362cf
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.438  | TNS=0.000  | WHS=0.075  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 82b36c2b
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+Phase 6 Post Hold Fix | Checksum: 82b36c2b
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.472714 %
+  Global Horizontal Routing Utilization  = 0.533891 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 13409ad67
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 13409ad67
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1772ae55c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.438  | TNS=0.000  | WHS=0.075  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1772ae55c
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1400.043 ; gain = 144.512
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1400.043 ; gain = 144.512
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 1400.043 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+86 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Oct 25 11:19:51 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+105 Infos, 100 Warnings, 101 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1854.805 ; gain = 431.219
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 11:19:51 2018...
