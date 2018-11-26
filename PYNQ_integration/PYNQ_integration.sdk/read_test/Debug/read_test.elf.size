@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  23184	   1168	  22600	  46952	   b768	read_test.elf
+  25552	   1200	  22648	  49400	   c0f8	read_test.elf

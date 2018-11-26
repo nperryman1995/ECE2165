@@ -1,0 +1,28 @@
+/*
+ * zscore_driver.h
+ *
+ *  Created on: Nov 19, 2018
+ *      Author: Mitch
+ */
+
+#ifndef SRC_ZSCORE_DRIVER_H_
+#define SRC_ZSCORE_DRIVER_H_
+
+#include "xil_types.h"
+
+struct Zscore_Control {
+	u32 * zscore_baseaddr;
+	u32 g_zscore_data_spots;
+	int g_zscore_data_index;
+};
+
+typedef struct Zscore_Control Zscore_Control_t;
+
+void Zscore_setup(Zscore_Control_t *Zscore_settings, u32 * zscore_baseaddr, u32 g_zscore_data_spots);
+void Zscore_addData(Zscore_Control_t *Zscore_settings, u32 data);
+u32 Zscore_getStandardDev(Zscore_Control_t *Zscore_settings);
+u32 Zscore_checkAnomaly(Zscore_Control_t *Zscore_settings, u32 threshold);
+
+
+
+#endif /* SRC_ZSCORE_DRIVER_H_ */

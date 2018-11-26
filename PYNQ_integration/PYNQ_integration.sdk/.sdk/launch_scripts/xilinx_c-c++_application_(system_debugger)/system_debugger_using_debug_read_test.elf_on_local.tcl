@@ -1,5 +1,7 @@
 connect -url tcp:127.0.0.1:3121
 source C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D1DDA" && level==0} -index 1
+fpga -file C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4D1DDA"} -index 0
 loadhw -hw C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1

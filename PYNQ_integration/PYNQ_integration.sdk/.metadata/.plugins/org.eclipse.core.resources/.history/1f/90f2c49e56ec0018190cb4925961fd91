@@ -1,0 +1,29 @@
+/*
+ * cusum_driver.h
+ *
+ *  Created on: Nov 19, 2018
+ *      Author: Mitch
+ */
+
+#ifndef SRC_CUSUM_DRIVER_H_
+#define SRC_CUSUM_DRIVER_H_
+
+#include "xil_types.h"
+
+struct Cusum_Control {
+	u32 * cusum_baseaddr; // address on the AXI bus
+	u32 cusum_data_spots; // max number of data points in block
+	int cusum_data_index; // where to add the next data point
+	u32 cusum_mean_spots; // max number of means in block
+	int cusum_mean_index; // where to add the next mean
+};
+
+typedef struct Cusum_Control Cusum_Control_t;
+
+void Cusum_setup(Cusum_Control_t *cusum_settings, u32 * cusum_baseaddr, u32 cusum_data_spots, u32 cusum_mean_spots);
+void Cusum_addData(Cusum_Control_t *cusum_settings, u32 data);
+u32 Cusum_getStandardDev(Cusum_Control_t *cusum_settings);
+u32 Cusum_checkAnomaly(Cusum_Control_t *cusum_settings, u32 threshold);
+void Cusum_reset(Cusum_Control_t *cusum_settings);
+
+#endif /* SRC_CUSUM_DRIVER_H_ */

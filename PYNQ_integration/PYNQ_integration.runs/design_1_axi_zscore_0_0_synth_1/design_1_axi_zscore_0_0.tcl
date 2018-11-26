@@ -29,7 +29,11 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:pynq:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/Mitch/Documents/DCA/czxkbczhxbczjhxc [current_project]
+set_property ip_repo_paths {
+  c:/Users/Mitch/Documents/DCA/derivative
+  c:/Users/Mitch/Documents/DCA/cusum
+  c:/Users/Mitch/Documents/DCA/zscore
+} [current_project]
 set_property ip_output_repo c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_zscore_0_0/design_1_axi_zscore_0_0.xci

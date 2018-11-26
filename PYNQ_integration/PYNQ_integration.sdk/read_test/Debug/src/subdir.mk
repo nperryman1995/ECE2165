@@ -7,13 +7,22 @@ LD_SRCS += \
 ../src/lscript.ld 
 
 C_SRCS += \
-../src/main.c 
+../src/cusum_driver.c \
+../src/derivative_driver.c \
+../src/main.c \
+../src/zscore_driver.c 
 
 OBJS += \
-./src/main.o 
+./src/cusum_driver.o \
+./src/derivative_driver.o \
+./src/main.o \
+./src/zscore_driver.o 
 
 C_DEPS += \
-./src/main.d 
+./src/cusum_driver.d \
+./src/derivative_driver.d \
+./src/main.d \
+./src/zscore_driver.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

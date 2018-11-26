@@ -1,0 +1,30 @@
+/*
+ * zscore_driver.h
+ *
+ *  Created on: Nov 19, 2018
+ *      Author: Mitch
+ */
+
+#ifndef SRC_ZSCORE_DRIVER_H_
+#define SRC_ZSCORE_DRIVER_H_
+
+#include "xil_types.h"
+
+struct Zscore_Control {
+	u32 * zscore_baseaddr; // address on the AXI bus
+	u32 zscore_data_spots; // max number of data points in block
+	int zscore_data_index; // where to add the next data point
+	u32 zscore_count;      // number of data points currently in the block
+};
+
+typedef struct Zscore_Control Zscore_Control_t;
+
+void Zscore_setup(Zscore_Control_t *Zscore_settings, u32 * zscore_baseaddr, u32 zscore_data_spots);
+void Zscore_addData(Zscore_Control_t *Zscore_settings, u32 data);
+u32 Zscore_getStandardDev(Zscore_Control_t *Zscore_settings);
+u32 Zscore_checkAnomaly(Zscore_Control_t *Zscore_settings, u32 threshold);
+void Zscore_reset(Zscore_Control_t *Zscore_settings);
+
+
+
+#endif /* SRC_ZSCORE_DRIVER_H_ */

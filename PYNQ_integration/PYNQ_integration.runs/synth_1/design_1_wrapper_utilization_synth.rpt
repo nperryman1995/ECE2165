@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Thu Oct 25 11:18:13 2018
+| Date         : Sun Nov 25 23:35:08 2018
 | Host         : DESKTOP-JBV9JL2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -162,6 +162,8 @@ Table of Contents
 | design_1_processing_system7_0_0 |    1 |
 | design_1_axi_zscore_0_0         |    1 |
 | design_1_axi_gpio_0_0           |    1 |
+| design_1_axi_derivative_0_0     |    1 |
+| design_1_axi_cusum_0_0          |    1 |
 | design_1_auto_pc_0              |    1 |
 +---------------------------------+------+
 

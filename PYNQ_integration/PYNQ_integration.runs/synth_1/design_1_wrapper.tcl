@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,7 +30,11 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:pynq:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/Mitch/Documents/DCA/czxkbczhxbczjhxc [current_project]
+set_property ip_repo_paths {
+  c:/Users/Mitch/Documents/DCA/derivative
+  c:/Users/Mitch/Documents/DCA/cusum
+  c:/Users/Mitch/Documents/DCA/zscore
+} [current_project]
 set_property ip_output_repo c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
