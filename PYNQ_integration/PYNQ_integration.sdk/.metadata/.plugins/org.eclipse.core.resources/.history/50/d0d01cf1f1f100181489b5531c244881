@@ -1,0 +1,88 @@
+/*
+ * ubc.c
+ *
+ *  Created on: Nov 26, 2018
+ *      Author: Mitch
+ */
+
+#include "ubc.h"
+#include "xparameters.h"
+#include "zscore_driver.h"
+#include "cusum_driver.h"
+#include "derivative_driver.h"
+
+#define NUM_ZSCORE 0
+#define NUM_CUSUM 0
+#define NUM_DERIV 0
+
+#ifndef XPAR_AXI_ZSCORE_0_BASEADDR
+#define XPAR_AXI_ZSCORE_0_BASEADDR 0
+#define XPAR_AXI_ZSCORE_1_BASEADDR 0
+#define XPAR_AXI_ZSCORE_2_BASEADDR 0
+#define NUM_ZSCORE 0
+#endif
+#ifndef XPAR_AXI_ZSCORE_1_BASEADDR
+#define XPAR_AXI_ZSCORE_1_BASEADDR 0
+#define XPAR_AXI_ZSCORE_2_BASEADDR 0
+#define NUM_ZSCORE 1
+#endif
+#ifndef XPAR_AXI_ZSCORE_2_BASEADDR
+#define XPAR_AXI_ZSCORE_2_BASEADDR 0
+#define NUM_ZSCORE 2
+#endif
+
+#ifndef XPAR_AXI_CUSUM_0_BASEADDR
+#define XPAR_AXI_CUSUM_0_BASEADDR 0
+#define XPAR_AXI_CUSUM_1_BASEADDR 0
+#define XPAR_AXI_CUSUM_2_BASEADDR 0
+#define NUM_CUSUM 0
+#endif
+#ifndef XPAR_AXI_CUSUM_1_BASEADDR
+#define XPAR_AXI_CUSUM_1_BASEADDR 0
+#define XPAR_AXI_CUSUM_2_BASEADDR 0
+#define NUM_CUSUM 1
+#endif
+#ifndef XPAR_AXI_CUSUM_2_BASEADDR
+#define XPAR_AXI_CUSUM_2_BASEADDR 0
+#define NUM_CUSUM 2
+#endif
+
+#ifndef XPAR_AXI_DERIVATIVE_0_BASEADDR
+#define XPAR_AXI_DERIVATIVE_0_BASEADDR 0
+#define XPAR_AXI_DERIVATIVE_1_BASEADDR 0
+#define XPAR_AXI_DERIVATIVE_2_BASEADDR 0
+#define NUM_DERIV 0
+#endif
+#ifndef XPAR_AXI_DERIVATIVE_1_BASEADDR
+#define XPAR_AXI_DERIVATIVE_1_BASEADDR 0
+#define XPAR_AXI_DERIVATIVE_2_BASEADDR 0
+#define NUM_DERIV 1
+#endif
+#ifndef XPAR_AXI_DERIVATIVE_2_BASEADDR
+#define XPAR_AXI_DERIVATIVE_2_BASEADDR 0
+#define NUM_DERIV 2
+#endif
+
+
+Zscore_Control_t zs_ctrls[NUM_ZSCORE];
+Cusum_Control_t cs_ctrls[NUM_CUSUM];
+Deriv_Control_t dr_ctrls[NUM_DERIV];
+
+u32 * zs_base_addrs[3] = {(u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, (u32 *)XPAR_AXI_ZSCORE_1_BASEADDR, (u32 *)XPAR_AXI_ZSCORE_2_BASEADDR};
+u32 * cs_base_addrs[3] = {(u32 *)XPAR_AXI_CUSUM_0_BASEADDR, (u32 *)XPAR_AXI_CUSUM_1_BASEADDR, (u32 *)XPAR_AXI_CUSUM_2_BASEADDR};
+u32 * dr_base_addrs[3] = {(u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_1_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_2_BASEADDR};
+
+void setup(u32 zscore_data_spots, u32 cusum_data_spots, u32 cusum_mean_spots, u32 cusum_expected_mean){
+	int i;
+	for(i=0;i<NUM_ZSCORE;i++){
+		Zscore_setup(&(zs_ctrls[i]), zs_base_addrs[i], zscore_data_spots);
+	}
+	for(i=0;i<NUM_CUSUM;i++){
+		Cusum_setup(&(cs_ctrls[i]), cs_base_addrs[i], cusum_data_spots, cusum_mean_spots, cusum_expected_mean);
+	}
+	for(i=0;i<NUM_DERIV;i++){
+		Deriv_setup(&(dr_ctrls[i]), dr_base_addrs[i]);
+	}
+}
+void addData(u32 data);
+u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);

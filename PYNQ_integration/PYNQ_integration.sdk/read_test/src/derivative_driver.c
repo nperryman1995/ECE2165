@@ -19,6 +19,11 @@ void Deriv_addData(Deriv_Control_t *deriv_settings, u32 data){
     }else{
         deriv_settings->deriv_data_index = 0;
     }
+    if(deriv_settings->deriv_ready2check == 0){
+    	deriv_settings->deriv_ready2check = 2;
+    }else if(deriv_settings->deriv_ready2check == 2){
+    	deriv_settings->deriv_ready2check = 1;
+    }
 }
 u32 Deriv_getVal(Deriv_Control_t *deriv_settings){
     return *(deriv_settings->deriv_baseaddr + DERIV_VAL_INDEX);

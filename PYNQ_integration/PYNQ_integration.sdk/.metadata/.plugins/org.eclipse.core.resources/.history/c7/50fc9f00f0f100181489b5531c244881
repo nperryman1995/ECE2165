@@ -1,0 +1,21 @@
+/*
+ * ubc.c
+ *
+ *  Created on: Nov 26, 2018
+ *      Author: Mitch
+ */
+
+#include "ubc.h"
+
+Zscore_Control_t zs_ctrls[NUM_ZSCORE];
+Cusum_Control_t cs_ctrls[NUM_CUSUM];
+Deriv_Control_t dr_ctrls[NUM_DERIV];
+
+void setup(void){
+	int i;
+	for(i=0;i<NUM_ZSCORE;i++){
+		Zscore_setup(&(zs_ctrls[i]), (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+	}
+}
+void addData(u32 data);
+u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);

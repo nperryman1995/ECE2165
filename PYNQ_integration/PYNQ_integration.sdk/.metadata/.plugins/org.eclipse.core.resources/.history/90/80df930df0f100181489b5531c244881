@@ -1,0 +1,22 @@
+/*
+ * ubc.h
+ * unified block controller
+ *  Created on: Nov 26, 2018
+ *      Author: Mitch
+ */
+
+#ifndef SRC_UBC_H_
+#define SRC_UBC_H_
+
+
+
+
+
+
+
+
+void setup(void);
+void addData(u32 data);
+u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+
+#endif /* SRC_UBC_H_ */

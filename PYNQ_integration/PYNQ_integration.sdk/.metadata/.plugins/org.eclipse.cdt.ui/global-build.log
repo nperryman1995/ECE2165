@@ -3833,3 +3833,1103 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+21:34:38 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:33 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:47:01 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:18 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:51:11 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25552	   1200	  22648	  49400	   c0f8	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:51:22 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:51:38 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25552	   1200	  22648	  49400	   c0f8	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:54:16 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25616	   1200	  22648	  49464	   c138	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:55:00 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+In file included from ../src/ubc.c:8:0:
+../src/ubc.h:32:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.h:19:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.h:48:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.h:20:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25616	   1200	  22696	  49512	   c168	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:56:02 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+In file included from ../src/ubc.c:8:0:
+../src/ubc.h:19:14: error: unknown type name 'u32'
+ void addData(u32 data);
+              ^~~
+../src/ubc.h:20:1: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+ ^~~
+../src/ubc.h:20:19: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                   ^~~
+../src/ubc.h:20:41: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                         ^~~
+../src/ubc.h:20:62: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                                              ^~~
+../src/ubc.c:10:1: error: unknown type name 'Zscore_Control_t'
+ Zscore_Control_t zs_ctrls[NUM_ZSCORE];
+ ^~~~~~~~~~~~~~~~
+../src/ubc.c:10:27: error: 'NUM_ZSCORE' undeclared here (not in a function)
+ Zscore_Control_t zs_ctrls[NUM_ZSCORE];
+                           ^~~~~~~~~~
+../src/ubc.c:11:1: error: unknown type name 'Cusum_Control_t'
+ Cusum_Control_t cs_ctrls[NUM_CUSUM];
+ ^~~~~~~~~~~~~~~
+../src/ubc.c:11:26: error: 'NUM_CUSUM' undeclared here (not in a function)
+ Cusum_Control_t cs_ctrls[NUM_CUSUM];
+                          ^~~~~~~~~
+../src/ubc.c:12:1: error: unknown type name 'Deriv_Control_t'
+ Deriv_Control_t dr_ctrls[NUM_DERIV];
+ ^~~~~~~~~~~~~~~
+../src/ubc.c:12:26: error: 'NUM_DERIV' undeclared here (not in a function)
+ Deriv_Control_t dr_ctrls[NUM_DERIV];
+                          ^~~~~~~~~
+../src/ubc.c: In function 'setup':
+../src/ubc.c:17:3: warning: implicit declaration of function 'Zscore_setup' [-Wimplicit-function-declaration]
+   Zscore_setup(&(zs_ctrls[i]), (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+   ^~~~~~~~~~~~
+../src/ubc.c:17:33: error: 'u32' undeclared (first use in this function)
+   Zscore_setup(&(zs_ctrls[i]), (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+                                 ^~~
+../src/ubc.c:17:33: note: each undeclared identifier is reported only once for each function it appears in
+../src/ubc.c:17:38: error: expected expression before ')' token
+   Zscore_setup(&(zs_ctrls[i]), (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+                                      ^
+../src/ubc.c: At top level:
+../src/ubc.c:20:14: error: unknown type name 'u32'
+ void addData(u32 data);
+              ^~~
+../src/ubc.c:21:1: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+ ^~~
+../src/ubc.c:21:19: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                   ^~~
+../src/ubc.c:21:41: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                         ^~~
+../src/ubc.c:21:62: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                                              ^~~
+make: *** [src/ubc.o] Error 1
+21:56:14 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+In file included from ../src/ubc.c:8:0:
+../src/ubc.h:19:14: error: unknown type name 'u32'
+ void addData(u32 data);
+              ^~~
+../src/ubc.h:20:1: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+ ^~~
+../src/ubc.h:20:19: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                   ^~~
+../src/ubc.h:20:41: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                         ^~~
+../src/ubc.h:20:62: error: unknown type name 'u32'
+ u32 detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                                                              ^~~
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+make: *** [src/ubc.o] Error 1
+21:56:35 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25680	   1200	  22696	  49576	   c1a8	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:01:47 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:71:6: error: conflicting types for 'setup'
+ void setup(u32 zscore_data_spots, u32 cusum_data_spots, u32 cusum_mean_spots, u32 cusum_expected_mean){
+      ^~~~~
+In file included from ../src/ubc.c:8:0:
+../src/ubc.h:18:6: note: previous declaration of 'setup' was here
+ void setup(void);
+      ^~~~~
+make: *** [src/ubc.o] Error 1
+22:02:11 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25808	   1200	  22696	  49704	   c228	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:05:25 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+In file included from ../src/ubc.c:9:0:
+../../read_test_bsp/ps7_cortexa9_0/include/xparameters.h:128:36: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_AXI_ZSCORE_0_BASEADDR 0x43C20000
+                                    ^
+../src/ubc.c:71:27: note: in expansion of macro 'XPAR_AXI_ZSCORE_0_BASEADDR'
+ u32 * zs_base_addrs[3] = {XPAR_AXI_ZSCORE_0_BASEADDR, XPAR_AXI_ZSCORE_1_BASEADDR, XPAR_AXI_ZSCORE_2_BASEADDR};
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../../read_test_bsp/ps7_cortexa9_0/include/xparameters.h:128:36: note: (near initialization for 'zs_base_addrs[0]')
+ #define XPAR_AXI_ZSCORE_0_BASEADDR 0x43C20000
+                                    ^
+../src/ubc.c:71:27: note: in expansion of macro 'XPAR_AXI_ZSCORE_0_BASEADDR'
+ u32 * zs_base_addrs[3] = {XPAR_AXI_ZSCORE_0_BASEADDR, XPAR_AXI_ZSCORE_1_BASEADDR, XPAR_AXI_ZSCORE_2_BASEADDR};
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25808	   1216	  22696	  49720	   c238	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:05:41 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25808	   1216	  22696	  49720	   c238	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:07:05 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:73:73: error: 'XPAR_AXI_DERIVATIVE_1_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_AXI_DERIVATIVE_0_BASEADDR'?
+ u32 * dr_base_addrs[3] = {(u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_1_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_2_BASEADDR};
+                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                         XPAR_AXI_DERIVATIVE_0_BASEADDR
+../src/ubc.c:73:112: error: 'XPAR_AXI_DERIVATIVE_2_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_AXI_DERIVATIVE_1_BASEADDR'?
+ u32 * dr_base_addrs[3] = {(u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_1_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_2_BASEADDR};
+                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                                                XPAR_AXI_DERIVATIVE_1_BASEADDR
+make: *** [src/ubc.o] Error 1
+22:07:40 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25872	   1240	  22712	  49824	   c2a0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:10:07 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26128	   1240	  22712	  50080	   c3a0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:26:49 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 0
+ 
+../src/ubc.c: In function 'detectAnomaly':
+../src/ubc.c:110:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26384	   1240	  22712	  50336	   c4a0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:28:56 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 0
+ 
+../src/ubc.c: In function 'detectAnomaly':
+../src/ubc.c:114:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26448	   1240	  22712	  50400	   c4e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:29:04 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 0
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 0
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 0
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26448	   1240	  22712	  50400	   c4e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+22:29:26 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 3
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 3
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 3
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26448	   1240	  22712	  50400	   c4e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:01:13 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:19:1: error: unknown type name 'Zscore_Control_t'
+ Zscore_Control_t zs_ctrl;
+ ^~~~~~~~~~~~~~~~
+../src/main.c:20:1: error: unknown type name 'Cusum_Control_t'
+ Cusum_Control_t cs_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c:21:1: error: unknown type name 'Deriv_Control_t'
+ Deriv_Control_t dr_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:53:2: warning: implicit declaration of function 'Zscore_setup' [-Wimplicit-function-declaration]
+  Zscore_setup(&zs_ctrl, (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+  ^~~~~~~~~~~~
+../src/main.c:54:2: warning: implicit declaration of function 'Cusum_setup' [-Wimplicit-function-declaration]
+  Cusum_setup(&cs_ctrl, (u32 *)XPAR_AXI_CUSUM_0_BASEADDR, 8, 8, 10);
+  ^~~~~~~~~~~
+../src/main.c:55:2: warning: implicit declaration of function 'Deriv_setup' [-Wimplicit-function-declaration]
+  Deriv_setup(&dr_ctrl, (u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR);
+  ^~~~~~~~~~~
+../src/main.c:57:10: warning: implicit declaration of function 'Zscore_getStandardDev' [-Wimplicit-function-declaration]
+   data = Zscore_getStandardDev(&zs_ctrl);
+          ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:58:10: warning: implicit declaration of function 'Cusum_getVal' [-Wimplicit-function-declaration]
+   data = Cusum_getVal(&cs_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:59:10: warning: implicit declaration of function 'Deriv_getVal' [-Wimplicit-function-declaration]
+   data = Deriv_getVal(&dr_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:60:3: warning: implicit declaration of function 'Zscore_addData'; did you mean 'addData'? [-Wimplicit-function-declaration]
+   Zscore_addData(&zs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~~
+   addData
+../src/main.c:61:3: warning: implicit declaration of function 'Cusum_addData'; did you mean 'addData'? [-Wimplicit-function-declaration]
+   Cusum_addData(&cs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   addData
+../src/main.c:62:3: warning: implicit declaration of function 'Deriv_addData'; did you mean 'addData'? [-Wimplicit-function-declaration]
+   Deriv_addData(&dr_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   addData
+../src/main.c:37:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data = 0;
+      ^~~~
+make: *** [src/main.o] Error 1
+21:01:55 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:19:1: error: unknown type name 'Zscore_Control_t'
+ Zscore_Control_t zs_ctrl;
+ ^~~~~~~~~~~~~~~~
+../src/main.c:20:1: error: unknown type name 'Cusum_Control_t'
+ Cusum_Control_t cs_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c:21:1: error: unknown type name 'Deriv_Control_t'
+ Deriv_Control_t dr_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:53:2: warning: implicit declaration of function 'Zscore_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Zscore_setup(&zs_ctrl, (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+  ^~~~~~~~~~~~
+  ubc_setup
+../src/main.c:54:2: warning: implicit declaration of function 'Cusum_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Cusum_setup(&cs_ctrl, (u32 *)XPAR_AXI_CUSUM_0_BASEADDR, 8, 8, 10);
+  ^~~~~~~~~~~
+  ubc_setup
+../src/main.c:55:2: warning: implicit declaration of function 'Deriv_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Deriv_setup(&dr_ctrl, (u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR);
+  ^~~~~~~~~~~
+  ubc_setup
+../src/main.c:57:10: warning: implicit declaration of function 'Zscore_getStandardDev' [-Wimplicit-function-declaration]
+   data = Zscore_getStandardDev(&zs_ctrl);
+          ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:58:10: warning: implicit declaration of function 'Cusum_getVal' [-Wimplicit-function-declaration]
+   data = Cusum_getVal(&cs_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:59:10: warning: implicit declaration of function 'Deriv_getVal' [-Wimplicit-function-declaration]
+   data = Deriv_getVal(&dr_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:60:3: warning: implicit declaration of function 'Zscore_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Zscore_addData(&zs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:61:3: warning: implicit declaration of function 'Cusum_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Cusum_addData(&cs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:62:3: warning: implicit declaration of function 'Deriv_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Deriv_addData(&dr_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:37:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data = 0;
+      ^~~~
+make: *** [src/main.o] Error 1
+21:02:12 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:19:1: error: unknown type name 'Zscore_Control_t'
+ Zscore_Control_t zs_ctrl;
+ ^~~~~~~~~~~~~~~~
+../src/main.c:20:1: error: unknown type name 'Cusum_Control_t'
+ Cusum_Control_t cs_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c:21:1: error: unknown type name 'Deriv_Control_t'
+ Deriv_Control_t dr_ctrl;
+ ^~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:53:2: warning: implicit declaration of function 'Zscore_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Zscore_setup(&zs_ctrl, (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
+  ^~~~~~~~~~~~
+  ubc_setup
+../src/main.c:54:2: warning: implicit declaration of function 'Cusum_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Cusum_setup(&cs_ctrl, (u32 *)XPAR_AXI_CUSUM_0_BASEADDR, 8, 8, 10);
+  ^~~~~~~~~~~
+  ubc_setup
+../src/main.c:55:2: warning: implicit declaration of function 'Deriv_setup'; did you mean 'ubc_setup'? [-Wimplicit-function-declaration]
+  Deriv_setup(&dr_ctrl, (u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR);
+  ^~~~~~~~~~~
+  ubc_setup
+../src/main.c:57:10: warning: implicit declaration of function 'Zscore_getStandardDev' [-Wimplicit-function-declaration]
+   data = Zscore_getStandardDev(&zs_ctrl);
+          ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:58:10: warning: implicit declaration of function 'Cusum_getVal' [-Wimplicit-function-declaration]
+   data = Cusum_getVal(&cs_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:59:10: warning: implicit declaration of function 'Deriv_getVal' [-Wimplicit-function-declaration]
+   data = Deriv_getVal(&dr_ctrl);
+          ^~~~~~~~~~~~
+../src/main.c:60:3: warning: implicit declaration of function 'Zscore_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Zscore_addData(&zs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:61:3: warning: implicit declaration of function 'Cusum_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Cusum_addData(&cs_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:62:3: warning: implicit declaration of function 'Deriv_addData'; did you mean 'ubc_addData'? [-Wimplicit-function-declaration]
+   Deriv_addData(&dr_ctrl, data_array[i%8] + i*100);
+   ^~~~~~~~~~~~~
+   ubc_addData
+../src/main.c:37:6: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  u32 data = 0;
+      ^~~~
+make: *** [src/main.o] Error 1
+21:05:05 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:54:6: error: expected expression before ')' token
+   if()
+      ^
+../src/main.c:55:3: error: too few arguments to function 'ubc_detectAnomaly'
+   ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+   ^~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:14:0:
+../src/ubc.h:20:5: note: declared here
+ u32 ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+     ^~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+21:05:25 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:55:22: error: expected expression before 'u32'
+    ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+                      ^~~
+../src/main.c:55:4: error: too few arguments to function 'ubc_detectAnomaly'
+    ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+    ^~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:14:0:
+../src/ubc.h:20:5: note: declared here
+ u32 ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+     ^~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+21:06:03 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 3
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 3
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 3
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26000	   1240	  22648	  49888	   c2e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:06:35 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:6: warning: variable 'anomaly_result' set but not used [-Wunused-but-set-variable]
+  u32 anomaly_result;
+      ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26000	   1240	  22648	  49888	   c2e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:09:18 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 3
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 3
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 3
+ 
+../src/ubc.c: In function 'ubc_detectAnomaly':
+../src/ubc.c:104:17: error: invalid type argument of '->' (have 'Zscore_Control_t {aka struct Zscore_Control}')
+   if(zs_ctrls[i]->zscore_ready2check == 1){
+                 ^~
+../src/ubc.c:111:17: error: invalid type argument of '->' (have 'Cusum_Control_t {aka struct Cusum_Control}')
+   if(cs_ctrls[i]->cusum_ready2check == 1){
+                 ^~
+../src/ubc.c:118:17: error: invalid type argument of '->' (have 'Deriv_Control_t {aka struct Deriv_Control}')
+   if(dr_ctrls[i]->deriv_ready2check == 1){
+                 ^~
+make: *** [src/ubc.o] Error 1
+21:09:37 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 3
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 3
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 3
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26128	   1240	  22648	  50016	   c360	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:09:55 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:6: warning: variable 'anomaly_result' set but not used [-Wunused-but-set-variable]
+  u32 anomaly_result;
+      ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26128	   1240	  22648	  50016	   c360	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:10:12 **** Incremental Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:12:34 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ubc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ubc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ubc.d" -MT"src/ubc.o" -o "src/ubc.o" "../src/ubc.c"
+../src/ubc.c:27:0: warning: "NUM_ZSCORE" redefined
+ #define NUM_ZSCORE 1
+ 
+../src/ubc.c:14:0: note: this is the location of the previous definition
+ #define NUM_ZSCORE 3
+ 
+../src/ubc.c:43:0: warning: "NUM_CUSUM" redefined
+ #define NUM_CUSUM 1
+ 
+../src/ubc.c:15:0: note: this is the location of the previous definition
+ #define NUM_CUSUM 3
+ 
+../src/ubc.c:59:0: warning: "NUM_DERIV" redefined
+ #define NUM_DERIV 1
+ 
+../src/ubc.c:16:0: note: this is the location of the previous definition
+ #define NUM_DERIV 3
+ 
+'Finished building: ../src/ubc.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26192	   1240	  22648	  50080	   c3a0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:12:38 **** Incremental Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:18:13 **** Incremental Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:21:56 **** Auto Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/derivative_driver.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/derivative_driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../read_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/derivative_driver.d" -MT"src/derivative_driver.o" -o "src/derivative_driver.o" "../src/derivative_driver.c"
+'Finished building: ../src/derivative_driver.c'
+' '
+'Building target: read_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../read_test_bsp/ps7_cortexa9_0/lib -o "read_test.elf"  ./src/cusum_driver.o ./src/derivative_driver.o ./src/main.o ./src/ubc.o ./src/zscore_driver.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size read_test.elf  |tee "read_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26256	   1240	  22648	  50144	   c3e0	read_test.elf
+'Finished building: read_test.elf.size'
+' '
+21:22:01 **** Incremental Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:22:25 **** Incremental Build of configuration Debug for project read_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
