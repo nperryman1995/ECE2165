@@ -7,6 +7,9 @@
 
 #include "zscore_driver.h"
 
+u8 zscore_err_positions[] = {ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1, ZSCORE_ERR_INJ_CTRL_ADD1,
+						     ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2, ZSCORE_ERR_INJ_CTRL_ADD2,
+						     ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB, ZSCORE_ERR_INJ_CTRL_SUB};
 
 void Zscore_setup(Zscore_Control_t *Zscore_settings, u32 * zscore_baseaddr, u32 zscore_data_spots){
 	Zscore_settings->zscore_baseaddr = zscore_baseaddr;
@@ -43,6 +46,17 @@ void Zscore_reset(Zscore_Control_t *Zscore_settings){
 	}
 	Zscore_settings->zscore_data_index = 0;
 	Zscore_settings->zscore_ready2check = 0;
+	Zscore_clear_faults(Zscore_settings);
 }
 
+void Zscore_fault_inject(Zscore_Control_t *Zscore_settings, u32 err_pattern, u32 position, u8 port){
+	*(Zscore_settings->zscore_baseaddr + ZSCORE_ERR_INJ_INDEX) = err_pattern;
+	*(Zscore_settings->zscore_baseaddr + zscore_err_positions[position]) = 1 << port;
+}
+void Zscore_clear_faults(Zscore_Control_t *Zscore_settings){
+	*(Zscore_settings->zscore_baseaddr + ZSCORE_ERR_INJ_INDEX) = 0;
+	*(Zscore_settings->zscore_baseaddr + ZSCORE_ERR_INJ_CTRL_ADD1) = 0;
+	*(Zscore_settings->zscore_baseaddr + ZSCORE_ERR_INJ_CTRL_ADD2) = 0;
+	*(Zscore_settings->zscore_baseaddr + ZSCORE_ERR_INJ_CTRL_SUB) = 0;
+}
 

@@ -14,34 +14,34 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2536 
+INFO: Helper process launched with PID 4992 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 391.281 ; gain = 101.176
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 392.906 ; gain = 101.984
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_derivative_0_0' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/synth/design_1_axi_derivative_0_0.vhd:82]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'axi_derivative' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:46' bound to instance 'U0' of component 'axi_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/synth/design_1_axi_derivative_0_0.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'axi_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:85]
+INFO: [Synth 8-3491] module 'axi_derivative' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:46' bound to instance 'U0' of component 'axi_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/synth/design_1_axi_derivative_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'axi_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:85]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 14 - type: integer 
-INFO: [Synth 8-3491] module 'mm_derivative' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:46' bound to instance 'MM_i' of component 'mm_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:191]
-INFO: [Synth 8-638] synthesizing module 'mm_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:78]
+INFO: [Synth 8-3491] module 'mm_derivative' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:46' bound to instance 'MM_i' of component 'mm_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'mm_derivative' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:80]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 14 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element slv_out_reg[2] was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:100]
-WARNING: [Synth 8-6014] Unused sequential element slv_write_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:138]
-WARNING: [Synth 8-6014] Unused sequential element slv_read_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:139]
-INFO: [Synth 8-256] done synthesizing module 'mm_derivative' (1#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/mm_derivative.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element slv_out_reg[2] was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:102]
+WARNING: [Synth 8-6014] Unused sequential element slv_write_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:146]
+WARNING: [Synth 8-6014] Unused sequential element slv_read_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'mm_derivative' (1#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/mm_derivative.vhd:80]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'simple_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/simple_sub.vhd:5' bound to instance 'Derivative' of component 'simple_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:223]
-INFO: [Synth 8-638] synthesizing module 'simple_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/simple_sub.vhd:16]
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/fi_sub.vhd:5' bound to instance 'Derivative' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:232]
+INFO: [Synth 8-638] synthesizing module 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/fi_sub.vhd:18]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'simple_sub' (2#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/simple_sub.vhd:16]
-INFO: [Synth 8-226] default block is never used [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:307]
-INFO: [Synth 8-256] done synthesizing module 'axi_derivative' (3#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/9a27/axi_derivative.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'fi_sub' (2#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/fi_sub.vhd:18]
+INFO: [Synth 8-226] default block is never used [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:318]
+INFO: [Synth 8-256] done synthesizing module 'axi_derivative' (3#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/8d65/axi_derivative.vhd:85]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_derivative_0_0' (4#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/synth/design_1_axi_derivative_0_0.vhd:82]
 WARNING: [Synth 8-3331] design axi_derivative has unconnected port S_AXI_AWADDR[1]
 WARNING: [Synth 8-3331] design axi_derivative has unconnected port S_AXI_AWADDR[0]
@@ -58,7 +58,7 @@ WARNING: [Synth 8-3331] design axi_derivative has unconnected port S_AXI_ARPROT[
 WARNING: [Synth 8-3331] design axi_derivative has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design axi_derivative has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 445.973 ; gain = 155.867
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 448.152 ; gain = 157.230
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -71,10 +71,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 445.973 ; gain = 155.867
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 448.152 ; gain = 157.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 445.973 ; gain = 155.867
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 448.152 ; gain = 157.230
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -86,22 +86,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 790.738 ; gain = 0.191
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 792.336 ; gain = 0.016
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 790.738 ; gain = 500.633
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 792.336 ; gain = 501.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 790.738 ; gain = 500.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 792.336 ; gain = 501.414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 790.738 ; gain = 500.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 792.336 ; gain = 501.414
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'axi_wr_state_reg' in module 'axi_derivative'
 INFO: [Synth 8-5544] ROM "axi_bvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -115,7 +115,7 @@ INFO: [Synth 8-5544] ROM "axi_awaddr" won't be mapped to Block RAM because addre
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'axi_wr_state_reg' using encoding 'one-hot' in module 'axi_derivative'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 790.738 ; gain = 500.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 792.336 ; gain = 501.414
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -130,14 +130,16 @@ Detailed RTL Component Info :
 +---Adders : 
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
 	               14 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 4     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
 	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -149,18 +151,19 @@ Hierarchical RTL Component report
 Module mm_derivative 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-Module simple_sub 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module fi_sub 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
 Module axi_derivative 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -206,7 +209,7 @@ WARNING: [Synth 8-3331] design design_1_axi_derivative_0_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_derivative_0_0 has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design design_1_axi_derivative_0_0 has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 790.738 ; gain = 500.633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 792.336 ; gain = 501.414
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,13 +221,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 795.680 ; gain = 505.574
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 798.277 ; gain = 507.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 795.828 ; gain = 505.723
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 798.574 ; gain = 507.652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,7 +239,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -260,7 +263,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -273,7 +276,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -285,25 +288,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -321,29 +324,29 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |    20|
 |2     |LUT1   |    33|
-|3     |LUT2   |    66|
-|4     |LUT3   |     2|
-|5     |LUT4   |     7|
-|6     |LUT5   |    64|
-|7     |LUT6   |    39|
-|8     |FDRE   |    96|
+|3     |LUT2   |    34|
+|4     |LUT3   |    62|
+|5     |LUT4   |    13|
+|6     |LUT5   |    34|
+|7     |LUT6   |    70|
+|8     |FDRE   |   160|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------------+---------------+------+
 |      |Instance       |Module         |Cells |
 +------+---------------+---------------+------+
-|1     |top            |               |   327|
-|2     |  U0           |axi_derivative |   327|
-|3     |    Derivative |simple_sub     |    12|
-|4     |    MM_i       |mm_derivative  |   268|
+|1     |top            |               |   426|
+|2     |  U0           |axi_derivative |   426|
+|3     |    Derivative |fi_sub         |    25|
+|4     |    MM_i       |mm_derivative  |   353|
 +------+---------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 811.023 ; gain = 176.152
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 811.023 ; gain = 520.918
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 818.664 ; gain = 183.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 818.664 ; gain = 527.742
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -355,11 +358,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 33 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:00 . Memory (MB): peak = 821.895 ; gain = 543.262
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 822.316 ; gain = 542.863
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/design_1_axi_derivative_0_0_synth_1/design_1_axi_derivative_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/design_1_axi_derivative_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/design_1_axi_derivative_0_0_synth_1/design_1_axi_derivative_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_derivative_0_0_utilization_synth.rpt -pb design_1_axi_derivative_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 821.895 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 19 17:01:31 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 822.316 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  4 17:11:06 2018...

@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Sun Nov 25 23:33:25 2018
+--Date        : Tue Dec  4 17:10:11 2018
 --Host        : DESKTOP-JBV9JL2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1651,10 +1651,10 @@ entity design_1 is
     shield_dp26_dp41_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     shield_dp26_dp41_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of design_1 : entity is "design_1.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=14,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=7,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
@@ -1768,56 +1768,6 @@ architecture STRUCTURE of design_1 is
     gpio_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component design_1_axi_gpio_0_0;
-  component design_1_axi_zscore_0_0 is
-  port (
-    S_AXI_ACLK : in STD_LOGIC;
-    S_AXI_ARESETN : in STD_LOGIC;
-    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    S_AXI_AWPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_AWVALID : in STD_LOGIC;
-    S_AXI_AWREADY : out STD_LOGIC;
-    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S_AXI_WVALID : in STD_LOGIC;
-    S_AXI_WREADY : out STD_LOGIC;
-    S_AXI_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_BVALID : out STD_LOGIC;
-    S_AXI_BREADY : in STD_LOGIC;
-    S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    S_AXI_ARPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_ARVALID : in STD_LOGIC;
-    S_AXI_ARREADY : out STD_LOGIC;
-    S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_RVALID : out STD_LOGIC;
-    S_AXI_RREADY : in STD_LOGIC
-  );
-  end component design_1_axi_zscore_0_0;
-  component design_1_axi_derivative_0_0 is
-  port (
-    S_AXI_ACLK : in STD_LOGIC;
-    S_AXI_ARESETN : in STD_LOGIC;
-    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    S_AXI_AWPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_AWVALID : in STD_LOGIC;
-    S_AXI_AWREADY : out STD_LOGIC;
-    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S_AXI_WVALID : in STD_LOGIC;
-    S_AXI_WREADY : out STD_LOGIC;
-    S_AXI_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_BVALID : out STD_LOGIC;
-    S_AXI_BREADY : in STD_LOGIC;
-    S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    S_AXI_ARPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S_AXI_ARVALID : in STD_LOGIC;
-    S_AXI_ARREADY : out STD_LOGIC;
-    S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S_AXI_RVALID : out STD_LOGIC;
-    S_AXI_RREADY : in STD_LOGIC
-  );
-  end component design_1_axi_derivative_0_0;
   component design_1_axi_cusum_0_0 is
   port (
     S_AXI_ACLK : in STD_LOGIC;
@@ -1843,6 +1793,56 @@ architecture STRUCTURE of design_1 is
     S_AXI_RREADY : in STD_LOGIC
   );
   end component design_1_axi_cusum_0_0;
+  component design_1_axi_derivative_0_0 is
+  port (
+    S_AXI_ACLK : in STD_LOGIC;
+    S_AXI_ARESETN : in STD_LOGIC;
+    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    S_AXI_AWPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S_AXI_AWVALID : in STD_LOGIC;
+    S_AXI_AWREADY : out STD_LOGIC;
+    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S_AXI_WVALID : in STD_LOGIC;
+    S_AXI_WREADY : out STD_LOGIC;
+    S_AXI_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S_AXI_BVALID : out STD_LOGIC;
+    S_AXI_BREADY : in STD_LOGIC;
+    S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    S_AXI_ARPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S_AXI_ARVALID : in STD_LOGIC;
+    S_AXI_ARREADY : out STD_LOGIC;
+    S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S_AXI_RVALID : out STD_LOGIC;
+    S_AXI_RREADY : in STD_LOGIC
+  );
+  end component design_1_axi_derivative_0_0;
+  component design_1_axi_zscore_0_0 is
+  port (
+    S_AXI_ACLK : in STD_LOGIC;
+    S_AXI_ARESETN : in STD_LOGIC;
+    S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    S_AXI_AWPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S_AXI_AWVALID : in STD_LOGIC;
+    S_AXI_AWREADY : out STD_LOGIC;
+    S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S_AXI_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S_AXI_WVALID : in STD_LOGIC;
+    S_AXI_WREADY : out STD_LOGIC;
+    S_AXI_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S_AXI_BVALID : out STD_LOGIC;
+    S_AXI_BREADY : in STD_LOGIC;
+    S_AXI_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    S_AXI_ARPROT : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S_AXI_ARVALID : in STD_LOGIC;
+    S_AXI_ARREADY : out STD_LOGIC;
+    S_AXI_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    S_AXI_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S_AXI_RVALID : out STD_LOGIC;
+    S_AXI_RREADY : in STD_LOGIC
+  );
+  end component design_1_axi_zscore_0_0;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO_TRI_T : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -1989,34 +1989,34 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute x_interface_info : string;
-  attribute x_interface_info of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
-  attribute x_interface_info of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
-  attribute x_interface_info of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
-  attribute x_interface_info of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
-  attribute x_interface_info of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
-  attribute x_interface_info of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
-  attribute x_interface_info of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
-  attribute x_interface_info of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
-  attribute x_interface_info of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
-  attribute x_interface_info of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
-  attribute x_interface_info of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
-  attribute x_interface_info of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
-  attribute x_interface_info of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
-  attribute x_interface_info of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute x_interface_info of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
-  attribute x_interface_parameter of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
-  attribute x_interface_info of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
-  attribute x_interface_info of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
-  attribute x_interface_info of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
-  attribute x_interface_info of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
-  attribute x_interface_info of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
-  attribute x_interface_info of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
-  attribute x_interface_info of shield_dp26_dp41_tri_i : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_I";
-  attribute x_interface_info of shield_dp26_dp41_tri_o : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_O";
-  attribute x_interface_info of shield_dp26_dp41_tri_t : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_T";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
+  attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
+  attribute X_INTERFACE_INFO of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
+  attribute X_INTERFACE_INFO of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
+  attribute X_INTERFACE_INFO of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
+  attribute X_INTERFACE_INFO of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
+  attribute X_INTERFACE_INFO of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
+  attribute X_INTERFACE_INFO of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
+  attribute X_INTERFACE_INFO of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
+  attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
+  attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
+  attribute X_INTERFACE_INFO of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
+  attribute X_INTERFACE_INFO of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
+  attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
+  attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
+  attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO of shield_dp26_dp41_tri_i : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_I";
+  attribute X_INTERFACE_INFO of shield_dp26_dp41_tri_o : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_O";
+  attribute X_INTERFACE_INFO of shield_dp26_dp41_tri_t : signal is "xilinx.com:interface:gpio:1.0 shield_dp26_dp41 TRI_T";
 begin
   axi_gpio_0_GPIO_TRI_I(15 downto 0) <= shield_dp26_dp41_tri_i(15 downto 0);
   shield_dp26_dp41_tri_o(15 downto 0) <= axi_gpio_0_GPIO_TRI_O(15 downto 0);

@@ -174,10 +174,8 @@ proc create_root_design { parentCell } {
   set axi_derivative_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi_derivative:1.0 axi_derivative_0 ]
 
   set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /axi_derivative_0/S_AXI]
 
   # Create instance: axi_gpio_0, and set properties
@@ -191,10 +189,8 @@ proc create_root_design { parentCell } {
   set axi_zscore_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:axi_zscore:1.0 axi_zscore_0 ]
 
   set_property -dict [ list \
-   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
-   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /axi_zscore_0/S_AXI]
 
   # Create instance: processing_system7_0, and set properties

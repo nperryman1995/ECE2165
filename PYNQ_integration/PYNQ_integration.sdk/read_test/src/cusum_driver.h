@@ -14,7 +14,19 @@
 #define CUSUM_COUNT_INDEX 1
 #define CUSUM_VAL_INDEX 2
 #define CUSUM_EXPECTED_MEAN_INDEX 3
-#define CUSUM_DATA_START_INDEX 4
+#define CUSUM_ERR_INJ_INDEX 4
+#define CUSUM_ERR_INJ_CTRL_ADD 5
+#define CUSUM_ERR_INJ_CTRL_SUB 6
+#define CUSUM_ERR_INJ_CTRL_MIN 7
+#define CUSUM_ERR_INJ_CTRL_MAX 8
+#define CUSUM_DATA_START_INDEX 9
+
+#define CUSUM_ERR_INJ_CTRL_ADD_NUM 7
+#define CUSUM_ERR_INJ_CTRL_SUB_NUM 9
+#define CUSUM_ERR_INJ_CTRL_MIN_NUM 7
+#define CUSUM_ERR_INJ_CTRL_MAX_NUM 7
+
+
 
 struct Cusum_Control {
 	u32 * cusum_baseaddr; // address on the AXI bus
@@ -32,5 +44,7 @@ void Cusum_addData(Cusum_Control_t *cusum_settings, u32 data);
 u32 Cusum_getVal(Cusum_Control_t *cusum_settings);
 u32 Cusum_checkAnomaly(Cusum_Control_t *cusum_settings, u32 threshold);
 void Cusum_reset(Cusum_Control_t *cusum_settings);
+void Cusum_fault_inject(Cusum_Control_t *cusum_settings, u32 err_pattern, u32 position, u8 port);
+void Cusum_clear_faults(Cusum_Control_t *cusum_settings);
 
 #endif /* SRC_CUSUM_DRIVER_H_ */

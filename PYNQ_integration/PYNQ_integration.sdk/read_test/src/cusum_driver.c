@@ -7,6 +7,11 @@
 
 #include "cusum_driver.h"
 
+u8 cusum_err_positions[] = {CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM, CUSUM_ERR_INJ_CTRL_ADD_NUM,
+							CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM, CUSUM_ERR_INJ_CTRL_SUB_NUM,
+							CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM, CUSUM_ERR_INJ_CTRL_MIN_NUM,
+							CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM, CUSUM_ERR_INJ_CTRL_MAX_NUM};
+
 u32 CUSUM_MEANS_START_INDEX = 0;
 
 void Cusum_setup(Cusum_Control_t *Cusum_settings, u32 * cusum_baseaddr, u32 cusum_data_spots, u32 cusum_mean_spots, u32 expected_mean){
@@ -58,4 +63,19 @@ void Cusum_reset(Cusum_Control_t *Cusum_settings){
 	Cusum_settings->cusum_data_index = 0;
 	Cusum_settings->cusum_mean_index = 0;
 	Cusum_settings->cusum_ready2check = 0;
+	Cusum_clear_faults(Cusum_settings);
 }
+
+void Cusum_fault_inject(Cusum_Control_t *Cusum_settings, u32 err_pattern, u32 position, u8 port){
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_INDEX) = err_pattern;
+	*(Cusum_settings->cusum_baseaddr + cusum_err_positions[position]) = 1 << port;
+}
+
+void Cusum_clear_faults(Cusum_Control_t *Cusum_settings){
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_INDEX) = 0;
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_CTRL_ADD) = 0;
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_CTRL_SUB) = 0;
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_CTRL_MIN) = 0;
+	*(Cusum_settings->cusum_baseaddr + CUSUM_ERR_INJ_CTRL_MAX) = 0;
+}
+

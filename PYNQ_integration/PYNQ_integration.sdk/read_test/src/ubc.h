@@ -18,5 +18,11 @@
 void ubc_setup(u32 zscore_data_spots, u32 cusum_data_spots, u32 cusum_mean_spots, u32 cusum_expected_mean);
 void ubc_addData(u32 data);
 u32 ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_threshold);
+void ubc_change_deriv_inj(u8 allow_inj);
+void ubc_change_zscore_inj(u8 allow_inj);
+void ubc_change_cusum_inj(u8 allow_inj);
+void ubc_inject_fault();
+void ubc_reset_all_blocks();
+void ubc_set_fault_rate(double new_rate);
 
 #endif /* SRC_UBC_H_ */

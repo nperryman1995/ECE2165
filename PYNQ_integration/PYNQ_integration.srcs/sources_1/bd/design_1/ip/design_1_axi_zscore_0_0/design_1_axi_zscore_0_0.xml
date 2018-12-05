@@ -540,11 +540,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 19 22:00:09 UTC 2018</spirit:value>
+            <spirit:value>Tue Dec 04 22:10:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5ba73591</spirit:value>
+            <spirit:value>8:d65ef9e3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -560,11 +560,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 19 22:00:09 UTC 2018</spirit:value>
+            <spirit:value>Tue Dec 04 22:10:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5ba73591</spirit:value>
+            <spirit:value>8:d65ef9e3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -579,11 +579,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 19 22:00:09 UTC 2018</spirit:value>
+            <spirit:value>Tue Dec 04 22:10:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:efe63513</spirit:value>
+            <spirit:value>8:a661d397</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -599,11 +599,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 19 22:00:09 UTC 2018</spirit:value>
+            <spirit:value>Tue Dec 04 22:10:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:efe63513</spirit:value>
+            <spirit:value>8:a661d397</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -617,11 +617,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Nov 19 22:01:38 UTC 2018</spirit:value>
+            <spirit:value>Tue Dec 04 22:11:12 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:5ba73591</spirit:value>
+            <spirit:value>8:d65ef9e3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1004,23 +1004,23 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/axi_zscore.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/axi_zscore.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/mm_zscore.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/mm_zscore.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_adder.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_adder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_div.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_div.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_sub.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_sub.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1035,23 +1035,23 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/axi_zscore.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/axi_zscore.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/mm_zscore.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/mm_zscore.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_adder.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_adder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_div.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_div.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/119f/simple_sub.vhd</spirit:name>
+        <spirit:name>../../ipshared/d1fd/fi_sub.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1135,7 +1135,7 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
         <xilinx:tag xilinx:name="xilinx.com:user:axi_zscore:1.0_ARCHIVE_LOCATION">c:/Users/Mitch/Documents/DCA/zscore</xilinx:tag>
@@ -1167,14 +1167,14 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_ACLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c873e378"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="8518f7a4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f6a57aef"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6a89a344"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a9f25be7"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="5b10df54"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ce014427"/>

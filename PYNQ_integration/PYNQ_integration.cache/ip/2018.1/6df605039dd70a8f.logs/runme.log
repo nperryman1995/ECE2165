@@ -1,0 +1,415 @@
+
+*** Running vivado
+    with args -log design_1_axi_zscore_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_zscore_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_zscore_0_0.tcl -notrace
+Command: synth_design -top design_1_axi_zscore_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 488 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 392.598 ; gain = 102.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_zscore_0_0' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_zscore_0_0/synth/design_1_axi_zscore_0_0.vhd:82]
+	Parameter MAX_DATA_PTS_EXP bound to: 3 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter SIMPLE_DIVISION bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'axi_zscore' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:46' bound to instance 'U0' of component 'axi_zscore' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_zscore_0_0/synth/design_1_axi_zscore_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'axi_zscore' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:87]
+	Parameter MAX_DATA_PTS_EXP bound to: 3 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter SIMPLE_DIVISION bound to: 1 - type: bool 
+	Parameter MAX_DATA_PTS_EXP bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'mm_zscore' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:46' bound to instance 'MM_i' of component 'mm_zscore' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'mm_zscore' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:85]
+	Parameter MAX_DATA_PTS_EXP bound to: 3 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element slv_out_reg[2] was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:108]
+WARNING: [Synth 8-6014] Unused sequential element slv_out_reg[0] was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:108]
+WARNING: [Synth 8-6014] Unused sequential element slv_write_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:156]
+WARNING: [Synth 8-6014] Unused sequential element slv_read_reg was removed.  [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'mm_zscore' (1#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/mm_zscore.vhd:85]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+INFO: [Synth 8-638] synthesizing module 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:18]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fi_adder' (2#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:18]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:293]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+INFO: [Synth 8-638] synthesizing module 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:18]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fi_sub' (3#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:18]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_sub' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_sub.vhd:5' bound to instance 'SUBX' of component 'fi_sub' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:325]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'fi_adder' declared at 'c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/fi_adder.vhd:5' bound to instance 'STD_ADDRX' of component 'fi_adder' [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:340]
+INFO: [Synth 8-226] default block is never used [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:446]
+INFO: [Synth 8-256] done synthesizing module 'axi_zscore' (4#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ipshared/d1fd/axi_zscore.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_zscore_0_0' (5#1) [c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_zscore_0_0/synth/design_1_axi_zscore_0_0.vhd:82]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 447.422 ; gain = 157.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 447.422 ; gain = 157.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 447.422 ; gain = 157.090
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.064 . Memory (MB): peak = 798.504 ; gain = 1.703
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 798.504 ; gain = 508.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 798.504 ; gain = 508.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 798.504 ; gain = 508.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_wr_state_reg' in module 'axi_zscore'
+INFO: [Synth 8-5544] ROM "axi_bvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_awaddr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    addr |                              001 |                               00
+                    data |                              010 |                               01
+                    resp |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_wr_state_reg' using encoding 'one-hot' in module 'axi_zscore'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 798.504 ; gain = 508.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 8     
+	   2 Input     32 Bit       Adders := 22    
++---XORs : 
+	   2 Input     32 Bit         XORs := 66    
++---Registers : 
+	               32 Bit    Registers := 13    
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 74    
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 30    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mm_zscore 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 28    
+Module fi_sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module fi_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module axi_zscore 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design axi_zscore has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 798.504 ; gain = 508.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 806.766 ; gain = 516.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 811.613 ; gain = 521.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   272|
+|2     |LUT1   |   257|
+|3     |LUT2   |   264|
+|4     |LUT3   |   409|
+|5     |LUT4   |   370|
+|6     |LUT5   |   687|
+|7     |LUT6   |   343|
+|8     |FDRE   |   448|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |  3050|
+|2     |  U0     |axi_zscore |  2442|
+|3     |    MM_i |mm_zscore  |  2381|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 853.172 ; gain = 211.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 853.172 ; gain = 562.840
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 272 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 853.172 ; gain = 574.313
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.runs/design_1_axi_zscore_0_0_synth_1/design_1_axi_zscore_0_0.dcp' has been generated.

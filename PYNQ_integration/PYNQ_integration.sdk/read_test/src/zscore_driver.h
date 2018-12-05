@@ -13,7 +13,15 @@
 #define ZSCORE_MEAN_INDEX 0
 #define ZSCORE_COUNT_INDEX 1
 #define ZSCORE_STDDEV_INDEX 2
-#define ZSCORE_DATA_START_INDEX 3
+#define ZSCORE_ERR_INJ_INDEX 3
+#define ZSCORE_ERR_INJ_CTRL_ADD1 4
+#define ZSCORE_ERR_INJ_CTRL_ADD2 5
+#define ZSCORE_ERR_INJ_CTRL_SUB 6
+#define ZSCORE_DATA_START_INDEX 7
+
+#define ZSCORE_ERR_INJ_CTRL_ADD1_NUM 7
+#define ZSCORE_ERR_INJ_CTRL_ADD2_NUM 7
+#define ZSCORE_ERR_INJ_CTRL_SUB_NUM 8
 
 struct Zscore_Control {
 	u32 * zscore_baseaddr; // address on the AXI bus
@@ -29,6 +37,8 @@ void Zscore_addData(Zscore_Control_t *Zscore_settings, u32 data);
 u32 Zscore_getStandardDev(Zscore_Control_t *Zscore_settings);
 u32 Zscore_checkAnomaly(Zscore_Control_t *Zscore_settings, u32 threshold);
 void Zscore_reset(Zscore_Control_t *Zscore_settings);
+void Zscore_fault_inject(Zscore_Control_t *Zscore_settings, u32 err_pattern, u32 position, u8 port);
+void Zscore_clear_faults(Zscore_Control_t *Zscore_settings);
 
 
 

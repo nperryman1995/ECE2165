@@ -124,11 +124,6 @@
 /******************************************************************/
 
 
-/* Definitions for peripheral AXI_ZSCORE_0 */
-#define XPAR_AXI_ZSCORE_0_BASEADDR 0x43C20000
-#define XPAR_AXI_ZSCORE_0_HIGHADDR 0x43C2FFFF
-
-
 /* Definitions for peripheral PS7_AFI_0 */
 #define XPAR_PS7_AFI_0_S_AXI_BASEADDR 0xF8008000
 #define XPAR_PS7_AFI_0_S_AXI_HIGHADDR 0xF8008FFF
@@ -221,14 +216,19 @@
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
 
 
+/* Definitions for peripheral AXI_DERIVATIVE_0 */
+#define XPAR_AXI_DERIVATIVE_0_BASEADDR 0x43C10000
+#define XPAR_AXI_DERIVATIVE_0_HIGHADDR 0x43C1FFFF
+
+
 /* Definitions for peripheral AXI_CUSUM_0 */
 #define XPAR_AXI_CUSUM_0_BASEADDR 0x43C00000
 #define XPAR_AXI_CUSUM_0_HIGHADDR 0x43C0FFFF
 
 
-/* Definitions for peripheral AXI_DERIVATIVE_0 */
-#define XPAR_AXI_DERIVATIVE_0_BASEADDR 0x43C10000
-#define XPAR_AXI_DERIVATIVE_0_HIGHADDR 0x43C1FFFF
+/* Definitions for peripheral AXI_ZSCORE_0 */
+#define XPAR_AXI_ZSCORE_0_BASEADDR 0x43C20000
+#define XPAR_AXI_ZSCORE_0_HIGHADDR 0x43C2FFFF
 
 
 /******************************************************************/

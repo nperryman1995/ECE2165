@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:axi_derivative:1.0
--- IP Revision: 3
+-- IP Revision: 4
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -116,7 +116,7 @@ ARCHITECTURE design_1_axi_derivative_0_0_arch OF design_1_axi_derivative_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_derivative_0_0_arch : ARCHITECTURE IS "design_1_axi_derivative_0_0,axi_derivative,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_derivative_0_0_arch: ARCHITECTURE IS "design_1_axi_derivative_0_0,axi_derivative,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_derivative,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=16}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_derivative_0_0_arch: ARCHITECTURE IS "design_1_axi_derivative_0_0,axi_derivative,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=axi_derivative,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=16}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF S_AXI_RREADY: SIGNAL IS "xilinx.com:interface:aximm:1.0 S_AXI RREADY";

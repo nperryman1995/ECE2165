@@ -10,6 +10,8 @@
 #include "zscore_driver.h"
 #include "cusum_driver.h"
 #include "derivative_driver.h"
+//#include <time.h>
+#include <stdlib.h>
 
 #define NUM_ZSCORE 3
 #define NUM_CUSUM 3
@@ -72,6 +74,12 @@ u32 * zs_base_addrs[3] = {(u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, (u32 *)XPAR_AXI_ZSC
 u32 * cs_base_addrs[3] = {(u32 *)XPAR_AXI_CUSUM_0_BASEADDR, (u32 *)XPAR_AXI_CUSUM_1_BASEADDR, (u32 *)XPAR_AXI_CUSUM_2_BASEADDR};
 u32 * dr_base_addrs[3] = {(u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_1_BASEADDR, (u32 *)XPAR_AXI_DERIVATIVE_2_BASEADDR};
 
+u8 inject_deriv = 0;
+u8 inject_zscore = 0;
+u8 inject_cusum = 0;
+
+double ubc_fault_rate = 0.1;
+
 void ubc_setup(u32 zscore_data_spots, u32 cusum_data_spots, u32 cusum_mean_spots, u32 cusum_expected_mean){
 	int i;
 	for(i=0;i<NUM_ZSCORE;i++){
@@ -83,6 +91,7 @@ void ubc_setup(u32 zscore_data_spots, u32 cusum_data_spots, u32 cusum_mean_spots
 	for(i=0;i<NUM_DERIV;i++){
 		Deriv_setup(&(dr_ctrls[i]), dr_base_addrs[i]);
 	}
+	//srand(time(NULL));   // Initialization, should only be called once.
 }
 void ubc_addData(u32 data){
 	int i;
@@ -126,3 +135,112 @@ u32 ubc_detectAnomaly(u32 zscore_threshold, u32 cusum_threshold, u32 deriv_thres
 	}
 	return result;
 }
+
+void ubc_set_fault_rate(double new_rate){
+	ubc_fault_rate = new_rate;
+}
+
+void ubc_change_deriv_inj(u8 allow_inj){
+	inject_deriv = allow_inj;
+}
+void ubc_change_zscore_inj(u8 allow_inj){
+	inject_zscore = allow_inj;
+}
+void ubc_change_cusum_inj(u8 allow_inj){
+	inject_cusum = allow_inj;
+}
+
+void ubc_gen_deriv_fault(u32 * err_pattern, u8 * port){
+	int r = rand();
+	if(r>ubc_fault_rate*RAND_MAX){
+		*err_pattern = 0;
+		*port = 0;
+		return;
+	}
+	r = rand();
+	*err_pattern = 1 << (r % 32);
+	r = rand();
+	*port = (r % 3);
+}
+void ubc_gen_cusum_fault(u32 * position, u32 * err_pattern, u8 * port){
+	u32 max_pos = CUSUM_ERR_INJ_CTRL_ADD_NUM + CUSUM_ERR_INJ_CTRL_SUB_NUM + CUSUM_ERR_INJ_CTRL_MIN_NUM + CUSUM_ERR_INJ_CTRL_MAX_NUM;
+	int r = rand();
+	if(r>ubc_fault_rate*RAND_MAX){
+		*err_pattern = 0;
+		*port = 0;
+		return;
+	}
+	r = rand();
+	*err_pattern = 1 << (r % 32);
+	r = rand();
+	*position = r % max_pos;
+	r = rand();
+	if(*position < CUSUM_ERR_INJ_CTRL_ADD_NUM){
+		*port = (r % 3*CUSUM_ERR_INJ_CTRL_ADD_NUM);
+	}else if(*position < CUSUM_ERR_INJ_CTRL_ADD_NUM + CUSUM_ERR_INJ_CTRL_SUB_NUM){
+		*port = (r % 3*CUSUM_ERR_INJ_CTRL_SUB_NUM);
+	}else if(*position < CUSUM_ERR_INJ_CTRL_ADD_NUM + CUSUM_ERR_INJ_CTRL_SUB_NUM + CUSUM_ERR_INJ_CTRL_MIN_NUM){
+		*port = (r % 3*CUSUM_ERR_INJ_CTRL_MIN_NUM);
+	}else{
+		*port = (r % 3*CUSUM_ERR_INJ_CTRL_MAX_NUM);
+	}
+}
+void ubc_gen_zscore_fault(u32 * position, u32 * err_pattern, u8 * port){
+	u32 max_pos = ZSCORE_ERR_INJ_CTRL_ADD1_NUM + ZSCORE_ERR_INJ_CTRL_ADD2_NUM + ZSCORE_ERR_INJ_CTRL_SUB_NUM;
+	int r = rand();
+	if(r>ubc_fault_rate*RAND_MAX){
+		*err_pattern = 0;
+		*port = 0;
+		return;
+	}
+	r = rand();
+	*err_pattern = 1 << (r % 32);
+	r = rand();
+	*position = r % max_pos;
+	r = rand();
+	if(*position < ZSCORE_ERR_INJ_CTRL_ADD1_NUM){
+		*port = (r % 3*ZSCORE_ERR_INJ_CTRL_ADD1_NUM);
+	}else if(*position < ZSCORE_ERR_INJ_CTRL_ADD1_NUM + ZSCORE_ERR_INJ_CTRL_ADD2_NUM){
+		*port = (r % 3*ZSCORE_ERR_INJ_CTRL_ADD2_NUM);
+	}else{
+		*port = (r % 3*ZSCORE_ERR_INJ_CTRL_SUB_NUM);
+	}
+}
+
+void ubc_inject_fault(){
+	int i;
+	u32 err_pattern;
+	u32 position;
+	u8 port;
+	if(inject_zscore == 1){
+		ubc_gen_zscore_fault(&position, &err_pattern, &port);
+		for(i=0;i<NUM_ZSCORE;i++){
+			Zscore_fault_inject(&(zs_ctrls[i]), err_pattern, position, port);
+		}
+	}
+	if(inject_cusum == 1){
+		ubc_gen_cusum_fault(&position, &err_pattern, &port);
+		for(i=0;i<NUM_CUSUM;i++){
+			Cusum_fault_inject(&(cs_ctrls[i]), err_pattern, position, port);
+		}
+	}
+	if(inject_deriv == 1){
+		ubc_gen_deriv_fault(&err_pattern, &port);
+		for(i=0;i<NUM_DERIV;i++){
+			Deriv_fault_inject(&(dr_ctrls[i]), err_pattern, port);
+		}
+	}
+}
+void ubc_reset_all_blocks(){
+	int i;
+	for(i=0;i<NUM_ZSCORE;i++){
+		Zscore_reset(&(zs_ctrls[i]));
+	}
+	for(i=0;i<NUM_CUSUM;i++){
+		Cusum_reset(&(cs_ctrls[i]));
+	}
+	for(i=0;i<NUM_DERIV;i++){
+		Deriv_reset(&(dr_ctrls[i]));
+	}
+}
+

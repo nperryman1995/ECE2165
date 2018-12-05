@@ -13,6 +13,10 @@
 #define DERIV_DATA1 0
 #define DERIV_DATA2 1
 #define DERIV_VAL_INDEX 2
+#define DERIV_ERR_INJ_INDEX 3
+#define DERIV_ERR_INJ_CTRL 4
+
+#define DERIV_ERR_INJ_CTRL_NUM 1
 
 
 struct Deriv_Control {
@@ -28,5 +32,7 @@ void Deriv_addData(Deriv_Control_t *deriv_settings, u32 data);
 u32 Deriv_getVal(Deriv_Control_t *deriv_settings);
 u32 Deriv_checkAnomaly(Deriv_Control_t *deriv_settings, u32 threshold);
 void Deriv_reset(Deriv_Control_t *deriv_settings);
+void Deriv_fault_inject(Deriv_Control_t *deriv_settings, u32 err_pattern, u8 port);// no position because only one block in deriv
+void Deriv_clear_faults(Deriv_Control_t *deriv_settings);
 
 #endif /* SRC_DERIVATIVE_DRIVER_H_ */

@@ -39,4 +39,14 @@ void Deriv_reset(Deriv_Control_t *deriv_settings){
     *(deriv_settings->deriv_baseaddr + DERIV_DATA2) = 0;
 	deriv_settings->deriv_data_index = 0;
 	deriv_settings->deriv_ready2check = 0;
+	Deriv_clear_faults(deriv_settings);
+}
+
+void Deriv_fault_inject(Deriv_Control_t *deriv_settings, u32 err_pattern, u8 port){
+	*(deriv_settings->deriv_baseaddr + DERIV_ERR_INJ_INDEX) = err_pattern;
+	*(deriv_settings->deriv_baseaddr + DERIV_ERR_INJ_CTRL) = 1 << port;
+}
+void Deriv_clear_faults(Deriv_Control_t *deriv_settings){
+	*(deriv_settings->deriv_baseaddr + DERIV_ERR_INJ_INDEX) = 0;
+	*(deriv_settings->deriv_baseaddr + DERIV_ERR_INJ_CTRL) = 0;
 }
