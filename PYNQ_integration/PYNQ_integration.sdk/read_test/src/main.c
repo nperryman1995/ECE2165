@@ -40,7 +40,7 @@ int main(void){
 //	u32 data = 0;
 //	u32 mean,std_sqr,other;
 	u32 anomaly_result;
-	int i,j,k;
+	int i,j,k,m;
 	u32 data;
 
 	/* Initialize the GPIO driver */
@@ -78,6 +78,27 @@ int main(void){
 			while(anomaly_result == 0){
 				data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
 				ubc_addData(data);
+				if(j==0){
+					if(k==0){
+						//fill 1 window of data
+						for(m=0;m<7;m++){
+							data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
+							ubc_addData(data);
+						}
+					}else if(k==1){
+						//fill 1 window of data
+						for(m=0;m<8*8-1;m++){
+							data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
+							ubc_addData(data);
+						}
+					}else{
+						//fill 1 window of data
+						for(m=0;m<1;m++){
+							data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
+							ubc_addData(data);
+						}
+					}
+				}
 				ubc_inject_fault();
 				anomaly_result = ubc_detectAnomaly(8, 8, 8);
 				j++;

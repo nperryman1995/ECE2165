@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Dec  5 02:10:47 2018">
+<application name="pa" timeStamp="Thu Dec  6 14:38:24 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="6b1a0c87cc4c452f92badfa06a48a3c3" type="ProjectID"/>
 <property name="ProjectIteration" value="23" type="ProjectIteration"/>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeRSBBlock" value="24" type="JavaHandler"/>
 <property name="EditDelete" value="2" type="JavaHandler"/>
 <property name="NewExportHardware" value="10" type="JavaHandler"/>
-<property name="NewLaunchHardware" value="20" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="22" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenBlockDesign" value="8" type="JavaHandler"/>
 <property name="RegenerateRSBLayout" value="1" type="JavaHandler"/>
@@ -43,7 +43,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddressTreeTablePanel_ADDRESS_TREE_TABLE" value="2" type="GuiHandlerData"/>
 <property name="ApplyRSBMultiAutomationDialog_CHECKBOX_TREE" value="6" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="5" type="GuiHandlerData"/>
-<property name="BaseDialog_OK" value="79" type="GuiHandlerData"/>
+<property name="BaseDialog_OK" value="81" type="GuiHandlerData"/>
 <property name="BaseDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="BaseReportTab_RERUN" value="18" type="GuiHandlerData"/>
 <property name="BoardChooser_BOARD_TABLE" value="1" type="GuiHandlerData"/>
@@ -56,13 +56,13 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="41" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="8" type="GuiHandlerData"/>
-<property name="MainMenuMgr_CHECKPOINT" value="35" type="GuiHandlerData"/>
-<property name="MainMenuMgr_EXPORT" value="44" type="GuiHandlerData"/>
-<property name="MainMenuMgr_FILE" value="66" type="GuiHandlerData"/>
+<property name="MainMenuMgr_CHECKPOINT" value="37" type="GuiHandlerData"/>
+<property name="MainMenuMgr_EXPORT" value="46" type="GuiHandlerData"/>
+<property name="MainMenuMgr_FILE" value="70" type="GuiHandlerData"/>
 <property name="MainMenuMgr_FLOW" value="2" type="GuiHandlerData"/>
-<property name="MainMenuMgr_IP" value="35" type="GuiHandlerData"/>
-<property name="MainMenuMgr_PROJECT" value="35" type="GuiHandlerData"/>
-<property name="MainMenuMgr_TEXT_EDITOR" value="34" type="GuiHandlerData"/>
+<property name="MainMenuMgr_IP" value="37" type="GuiHandlerData"/>
+<property name="MainMenuMgr_PROJECT" value="37" type="GuiHandlerData"/>
+<property name="MainMenuMgr_TEXT_EDITOR" value="36" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="4" type="GuiHandlerData"/>
 <property name="MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED" value="5" type="GuiHandlerData"/>
 <property name="MsgView_INFORMATION_MESSAGES" value="4" type="GuiHandlerData"/>
@@ -72,7 +72,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_CREATE_TOP_HDL" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_EXPORT_HARDWARE" value="10" type="GuiHandlerData"/>
-<property name="PACommandNames_LAUNCH_HARDWARE" value="20" type="GuiHandlerData"/>
+<property name="PACommandNames_LAUNCH_HARDWARE" value="22" type="GuiHandlerData"/>
 <property name="PACommandNames_REGENERATE_LAYOUT" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_RUN_BITGEN" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_SAVE_RSB_DESIGN" value="10" type="GuiHandlerData"/>
@@ -90,7 +90,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SettingsProjectIPRepositoryPage_ADD_REPOSITORY" value="1" type="GuiHandlerData"/>
 <property name="SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL" value="9" type="GuiHandlerData"/>
 <property name="SimpleOutputProductDialog_RESET_OUTPUT_PRODUCTS" value="1" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="7" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="9" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_IP_DOCUMENTATION" value="2" type="GuiHandlerData"/>
 <property name="SystemBuilderView_ADD_IP" value="4" type="GuiHandlerData"/>
 <property name="SystemTab_REPORT_IP_STATUS" value="3" type="GuiHandlerData"/>
@@ -100,9 +100,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="2" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="75" type="GuiMode"/>
+<property name="GuiMode" value="77" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="67" type="TclMode"/>
+<property name="TclMode" value="69" type="TclMode"/>
 </item>
 </section>
 </application>

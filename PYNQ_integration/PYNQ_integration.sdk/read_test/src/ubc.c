@@ -152,12 +152,12 @@ void ubc_change_cusum_inj(u8 allow_inj){
 
 void ubc_gen_deriv_fault(u32 * err_pattern, u8 * port){
 	int r = rand();
-	if(r>ubc_fault_rate*RAND_MAX){
-		*err_pattern = 0;
-		*port = 0;
-		return;
-	}
-	r = rand();
+	//if(r>ubc_fault_rate*RAND_MAX){
+	//	*err_pattern = 0;
+	//	*port = 0;
+	//	return;
+	//}
+	//r = rand();
 	*err_pattern = 1 << (r % 32);
 	r = rand();
 	*port = (r % 3);
@@ -165,12 +165,12 @@ void ubc_gen_deriv_fault(u32 * err_pattern, u8 * port){
 void ubc_gen_cusum_fault(u32 * position, u32 * err_pattern, u8 * port){
 	u32 max_pos = CUSUM_ERR_INJ_CTRL_ADD_NUM + CUSUM_ERR_INJ_CTRL_SUB_NUM + CUSUM_ERR_INJ_CTRL_MIN_NUM + CUSUM_ERR_INJ_CTRL_MAX_NUM;
 	int r = rand();
-	if(r>ubc_fault_rate*RAND_MAX){
-		*err_pattern = 0;
-		*port = 0;
-		return;
-	}
-	r = rand();
+	//if(r>ubc_fault_rate*RAND_MAX){
+	//	*err_pattern = 0;
+	//	*port = 0;
+	//	return;
+	//}
+	//r = rand();
 	*err_pattern = 1 << (r % 32);
 	r = rand();
 	*position = r % max_pos;
@@ -188,12 +188,12 @@ void ubc_gen_cusum_fault(u32 * position, u32 * err_pattern, u8 * port){
 void ubc_gen_zscore_fault(u32 * position, u32 * err_pattern, u8 * port){
 	u32 max_pos = ZSCORE_ERR_INJ_CTRL_ADD1_NUM + ZSCORE_ERR_INJ_CTRL_ADD2_NUM + ZSCORE_ERR_INJ_CTRL_SUB_NUM;
 	int r = rand();
-	if(r>ubc_fault_rate*RAND_MAX){
-		*err_pattern = 0;
-		*port = 0;
-		return;
-	}
-	r = rand();
+	//if(r>ubc_fault_rate*RAND_MAX){
+	//	*err_pattern = 0;
+	//	*port = 0;
+	//	return;
+	//}
+	//r = rand();
 	*err_pattern = 1 << (r % 32);
 	r = rand();
 	*position = r % max_pos;

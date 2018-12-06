@@ -3,4 +3,7 @@
 <Block Addr="results" Context="JTAG-jsn-Xilinx PYNQ-Z1-003017A4D1DDA-4ba00477-0.0" Size="-1">
 <Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
 </Block>
+<Block Addr="results[1]" Context="JTAG-jsn-Xilinx PYNQ-Z1-003017A4D1DDA-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
 </Memory>
