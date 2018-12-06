@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2018.1" design="design_1_wrapper" designState="routed" date="Thu Dec  6 15:32:54 2018" pwrOpt="BRAMPwropt" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7z020" grade="commercial" package="clg400" speed="-1" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vcco33" voltage="3.300000" icc="0.000165" iccq="0.001000" power="0.003845">
+			</SOURCE>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.000000" iccq="0.000782" power="0.000782">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="0.001005" iccq="0.012965" power="0.013971">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.000021" iccq="0.014089" power="0.025399">
+			</SOURCE>
+			<SOURCE name="Vccpint" voltage="1.000000" icc="0.646808" iccq="0.026850" power="0.673658">
+			</SOURCE>
+			<SOURCE name="Vccpaux" voltage="1.800000" icc="0.026155" iccq="0.010330" power="0.065674">
+			</SOURCE>
+			<SOURCE name="Vccpll" voltage="1.800000" icc="0.013749" iccq="0.003000" power="0.030148">
+			</SOURCE>
+			<SOURCE name="Vcco_ddr" voltage="1.500000" icc="0.351705" iccq="0.002000" power="0.530558">
+			</SOURCE>
+			<SOURCE name="Vcco_mio0" voltage="3.300000" icc="0.001750" iccq="0.001000" power="0.009075">
+			</SOURCE>
+			<SOURCE name="Vcco_mio1" voltage="1.800000" icc="0.002187" iccq="0.001000" power="0.005737">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000000" iccq="0.020000" power="0.036000">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="none">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="8to11 (8 to 11 Layers)">
+			</BOARDLAYERS>
+			<TSA value="0.000000">
+			</TSA>
+			<TJB value="7.400000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="41.1 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+				<CLOCK name="design_1_i/processing_system7_0/inst/FCLK_CLK0" freq="10.000001" belFanout="1238" sliceFanout="348" FoPerSite="3.557471" sliceEnableRate="0.482435" leafs="20.000000" hrows="3.000000" power="0.000555" enableRate="1" bufType="BUFG">
+				</CLOCK>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="10.000001" clockFreq2="10.000001" toggleRate="9.044884" toggleRate2="12.500037" totalRate="7109.241899" name="clk_fpga_0" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="3.529703" ru="7.281512" fanout2="4.041494" totalFanout="2139.000000" fanoutRate="874.473445" numNets="1238" extNets="606" carry4s="38" luts="843" logicCap="326269407" signalCap="197040.000000" power="0.000141" sp="0.000074">
+				</LOGIC>
+				<LOGIC clock="design_1_i/processing_system7_0/inst/FCLK_CLK0" clockFreq="10.000001" clockFreq2="10.000001" toggleRate="0.030920" toggleRate2="0.000000" totalRate="17.386946" name="clk_fpga_0" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.166530" fanout="1.984848" ru="10.996306" fanout2="0.000000" totalFanout="131.000000" fanoutRate="1.738695" numNets="66" extNets="66" SRL="62" logicCap="0" signalCap="22444.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="design_1_i/processing_system7_0/inst/FCLK_CLK0" clockFreq="10.000001" clockFreq2="10.000001" toggleRate="4.170232" toggleRate2="11.048869" totalRate="4854.150436" name="clk_fpga_0" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.508810" fanout="2.861684" ru="9.870870" fanout2="3.356796" totalFanout="3331.000000" fanoutRate="990.227586" numNets="1164" extNets="1164" ffs="1164" logicCap="38655000" signalCap="473095.000000" power="0.000011" sp="0.000108">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="10.000001" clockFreq2="1.250000" toggleRate="12.500000" toggleRate2="12.500000" totalRate="12.500000" name="Unassigned_Clock" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="1" extNets="0" luts="1" logicCap="297500" signalCap="0.000000" power="0.000000" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="10.000001" clockFreq2="1.051994" toggleRate="3.763811" toggleRate2="13.378971" totalRate="43.044761" name="High_Fanout_Nets" hierName="design_1_wrapper/design_1_i" writeRate="0.000000" enableRate="0.714286" fanout="80.555556" ru="21.924155" fanout2="58.333333" totalFanout="725.000000" fanoutRate="120.108741" numNets="9" extNets="9" ffs="7" luts="2" logicCap="533700" signalCap="36645.000000" power="0.000000" sp="0.000008">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IO">
+				<MODULE name="shield_dp26_dp41_tri_io&lt;0:15&gt;" count="16">
+					<GROUPSUMMARY>
+						<IO name="shield_dp26_dp41_tri_io&lt;0:15&gt;" clock="clk_fpga_0" clockFreq="10.000001" ioStandard="LVCMOS33_12_SLOW" bidis="16" inputs="0" outputs="0" signalRate="0.625021" toggleRate="6.250212" outputEnableRate="0.500000" outputLoad="0.000000" dataRate="SDR" serdes="No" preEmphasis="No" ioDelay="No" ibufLowPower="Yes" inTerm="RTT_NONE" outTerm="RDRV_NONE_NONE" numHR="16" ibufDisable="0.000000" dcitermDisable="0.000000" vccInt="0.000003" vccAux="0.000038" vcco="0.000545" vccoCurrent="0.000165" extTerm="NONE">
+						</IO>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="PS7">
+				<PS7>
+					<PROCESSOR name="system" numA9Cores="2" clockFreq="650.000000" load="0.500000">
+					</PROCESSOR>
+					<MEMORY name="code" memType="DDR3" dataWidth="16" clockFreq="525.000000" readRate="0.500000" writeRate="0.500000">
+					</MEMORY>
+					<GPIO interface="GPIO Bank 1" ioStandard="LVCMOS 1.8V" bidis="4" ioBank="Vcco_p1" clockFreq="1.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="GPIO Bank 0" ioStandard="LVCMOS 3.3V" bidis="6" ioBank="Vcco_p0" clockFreq="1.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="UART" ioStandard="LVCMOS 3.3V" bidis="2" ioBank="Vcco_p0" clockFreq="100.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="SD" ioStandard="LVCMOS 1.8V" bidis="7" ioBank="Vcco_p1" clockFreq="50.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="USB" ioStandard="LVCMOS 1.8V" bidis="12" ioBank="Vcco_p1" clockFreq="60.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="GigE" ioStandard="LVCMOS 1.8V" bidis="14" ioBank="Vcco_p1" clockFreq="125.000000" usageRate="0.500000">
+					</GPIO>
+					<GPIO interface="QSPI" ioStandard="LVCMOS 3.3V" bidis="7" ioBank="Vcco_p0" clockFreq="200.000000" usageRate="0.500000">
+					</GPIO>
+					<PLL domain="Processor" vco="1300.000000">
+					</PLL>
+					<PLL domain="Memory" vco="1050.000000">
+					</PLL>
+					<PLL domain="IO" vco="1000.000000">
+					</PLL>
+					<AXI interface="AXI_GP" width="32" clockFreq="10.000000" usageRate="0.500000">
+					</AXI>
+				</PS7>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="0" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+
