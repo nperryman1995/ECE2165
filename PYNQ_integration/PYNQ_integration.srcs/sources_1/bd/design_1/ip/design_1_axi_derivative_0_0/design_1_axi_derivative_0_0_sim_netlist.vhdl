@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Tue Dec  4 17:11:06 2018
+-- Date        : Tue Dec  4 17:11:05 2018
 -- Host        : DESKTOP-JBV9JL2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/design_1_axi_derivative_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_derivative_0_0 -prefix
+--               design_1_axi_derivative_0_0_ design_1_axi_derivative_0_0_sim_netlist.vhdl
 -- Design      : design_1_axi_derivative_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -40,8 +40,6 @@ entity design_1_axi_derivative_0_0_fi_sub is
     O : in STD_LOGIC_VECTOR ( 0 to 0 );
     \slv_out_reg[4][0]_6\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_derivative_0_0_fi_sub : entity is "fi_sub";
 end design_1_axi_derivative_0_0_fi_sub;
 
 architecture STRUCTURE of design_1_axi_derivative_0_0_fi_sub is
@@ -428,8 +426,6 @@ entity design_1_axi_derivative_0_0_mm_derivative is
     S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     S_AXI_ACLK : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_derivative_0_0_mm_derivative : entity is "mm_derivative";
 end design_1_axi_derivative_0_0_mm_derivative;
 
 architecture STRUCTURE of design_1_axi_derivative_0_0_mm_derivative is
@@ -4057,8 +4053,6 @@ entity design_1_axi_derivative_0_0_axi_derivative is
     S_AXI_BREADY : in STD_LOGIC;
     S_AXI_ARVALID : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_derivative_0_0_axi_derivative : entity is "axi_derivative";
 end design_1_axi_derivative_0_0_axi_derivative;
 
 architecture STRUCTURE of design_1_axi_derivative_0_0_axi_derivative is

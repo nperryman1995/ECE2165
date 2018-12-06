@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-// Date        : Tue Dec  4 17:11:06 2018
+// Date        : Tue Dec  4 17:11:05 2018
 // Host        : DESKTOP-JBV9JL2 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_derivative_0_0/design_1_axi_derivative_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_axi_derivative_0_0 -prefix
+//               design_1_axi_derivative_0_0_ design_1_axi_derivative_0_0_sim_netlist.v
 // Design      : design_1_axi_derivative_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,96 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_axi_derivative_0_0,axi_derivative,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_derivative,Vivado 2018.1" *) 
-(* NotValidForBitStream *)
-module design_1_axi_derivative_0_0
-   (S_AXI_ACLK,
-    S_AXI_ARESETN,
-    S_AXI_AWADDR,
-    S_AXI_AWPROT,
-    S_AXI_AWVALID,
-    S_AXI_AWREADY,
-    S_AXI_WDATA,
-    S_AXI_WSTRB,
-    S_AXI_WVALID,
-    S_AXI_WREADY,
-    S_AXI_BRESP,
-    S_AXI_BVALID,
-    S_AXI_BREADY,
-    S_AXI_ARADDR,
-    S_AXI_ARPROT,
-    S_AXI_ARVALID,
-    S_AXI_ARREADY,
-    S_AXI_RDATA,
-    S_AXI_RRESP,
-    S_AXI_RVALID,
-    S_AXI_RREADY);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 10000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0" *) input S_AXI_ACLK;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW" *) input S_AXI_ARESETN;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 10000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *) input [15:0]S_AXI_AWADDR;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *) input [2:0]S_AXI_AWPROT;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input S_AXI_AWVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output S_AXI_AWREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]S_AXI_WDATA;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WSTRB" *) input [3:0]S_AXI_WSTRB;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WVALID" *) input S_AXI_WVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WREADY" *) output S_AXI_WREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]S_AXI_BRESP;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output S_AXI_BVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input S_AXI_BREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [15:0]S_AXI_ARADDR;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *) input [2:0]S_AXI_ARPROT;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *) input S_AXI_ARVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *) output S_AXI_ARREADY;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *) output [31:0]S_AXI_RDATA;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *) output [1:0]S_AXI_RRESP;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output S_AXI_RVALID;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) input S_AXI_RREADY;
-
-  wire \<const0> ;
-  wire \<const1> ;
-  wire S_AXI_ACLK;
-  wire [15:0]S_AXI_ARADDR;
-  wire S_AXI_ARESETN;
-  wire S_AXI_ARVALID;
-  wire [15:0]S_AXI_AWADDR;
-  wire S_AXI_AWVALID;
-  wire S_AXI_BREADY;
-  wire S_AXI_BVALID;
-  wire [31:0]S_AXI_RDATA;
-  wire S_AXI_RREADY;
-  wire S_AXI_RVALID;
-  wire [31:0]S_AXI_WDATA;
-  wire S_AXI_WREADY;
-  wire S_AXI_WVALID;
-
-  assign S_AXI_ARREADY = \<const1> ;
-  assign S_AXI_AWREADY = \<const1> ;
-  assign S_AXI_BRESP[1] = \<const0> ;
-  assign S_AXI_BRESP[0] = \<const0> ;
-  assign S_AXI_RRESP[1] = \<const0> ;
-  assign S_AXI_RRESP[0] = \<const0> ;
-  GND GND
-       (.G(\<const0> ));
-  design_1_axi_derivative_0_0_axi_derivative U0
-       (.S_AXI_ACLK(S_AXI_ACLK),
-        .S_AXI_ARADDR(S_AXI_ARADDR[15:2]),
-        .S_AXI_ARESETN(S_AXI_ARESETN),
-        .S_AXI_ARVALID(S_AXI_ARVALID),
-        .S_AXI_AWADDR(S_AXI_AWADDR[15:2]),
-        .S_AXI_AWVALID(S_AXI_AWVALID),
-        .S_AXI_BREADY(S_AXI_BREADY),
-        .S_AXI_RDATA(S_AXI_RDATA),
-        .S_AXI_RREADY(S_AXI_RREADY),
-        .S_AXI_RVALID(S_AXI_RVALID),
-        .S_AXI_WDATA(S_AXI_WDATA),
-        .S_AXI_WVALID(S_AXI_WVALID),
-        .out({S_AXI_BVALID,S_AXI_WREADY}));
-  VCC VCC
-       (.P(\<const1> ));
-endmodule
-
-(* ORIG_REF_NAME = "axi_derivative" *) 
 module design_1_axi_derivative_0_0_axi_derivative
    (out,
     S_AXI_RDATA,
@@ -633,7 +543,95 @@ module design_1_axi_derivative_0_0_axi_derivative
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "fi_sub" *) 
+(* CHECK_LICENSE_TYPE = "design_1_axi_derivative_0_0,axi_derivative,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_derivative,Vivado 2018.1" *) 
+(* NotValidForBitStream *)
+module design_1_axi_derivative_0_0
+   (S_AXI_ACLK,
+    S_AXI_ARESETN,
+    S_AXI_AWADDR,
+    S_AXI_AWPROT,
+    S_AXI_AWVALID,
+    S_AXI_AWREADY,
+    S_AXI_WDATA,
+    S_AXI_WSTRB,
+    S_AXI_WVALID,
+    S_AXI_WREADY,
+    S_AXI_BRESP,
+    S_AXI_BVALID,
+    S_AXI_BREADY,
+    S_AXI_ARADDR,
+    S_AXI_ARPROT,
+    S_AXI_ARVALID,
+    S_AXI_ARREADY,
+    S_AXI_RDATA,
+    S_AXI_RRESP,
+    S_AXI_RVALID,
+    S_AXI_RREADY);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 10000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0" *) input S_AXI_ACLK;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW" *) input S_AXI_ARESETN;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 10000000, ID_WIDTH 0, ADDR_WIDTH 16, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0" *) input [15:0]S_AXI_AWADDR;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWPROT" *) input [2:0]S_AXI_AWPROT;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input S_AXI_AWVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output S_AXI_AWREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WDATA" *) input [31:0]S_AXI_WDATA;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WSTRB" *) input [3:0]S_AXI_WSTRB;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WVALID" *) input S_AXI_WVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI WREADY" *) output S_AXI_WREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]S_AXI_BRESP;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output S_AXI_BVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input S_AXI_BREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [15:0]S_AXI_ARADDR;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARPROT" *) input [2:0]S_AXI_ARPROT;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARVALID" *) input S_AXI_ARVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARREADY" *) output S_AXI_ARREADY;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RDATA" *) output [31:0]S_AXI_RDATA;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RRESP" *) output [1:0]S_AXI_RRESP;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output S_AXI_RVALID;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) input S_AXI_RREADY;
+
+  wire \<const0> ;
+  wire \<const1> ;
+  wire S_AXI_ACLK;
+  wire [15:0]S_AXI_ARADDR;
+  wire S_AXI_ARESETN;
+  wire S_AXI_ARVALID;
+  wire [15:0]S_AXI_AWADDR;
+  wire S_AXI_AWVALID;
+  wire S_AXI_BREADY;
+  wire S_AXI_BVALID;
+  wire [31:0]S_AXI_RDATA;
+  wire S_AXI_RREADY;
+  wire S_AXI_RVALID;
+  wire [31:0]S_AXI_WDATA;
+  wire S_AXI_WREADY;
+  wire S_AXI_WVALID;
+
+  assign S_AXI_ARREADY = \<const1> ;
+  assign S_AXI_AWREADY = \<const1> ;
+  assign S_AXI_BRESP[1] = \<const0> ;
+  assign S_AXI_BRESP[0] = \<const0> ;
+  assign S_AXI_RRESP[1] = \<const0> ;
+  assign S_AXI_RRESP[0] = \<const0> ;
+  GND GND
+       (.G(\<const0> ));
+  design_1_axi_derivative_0_0_axi_derivative U0
+       (.S_AXI_ACLK(S_AXI_ACLK),
+        .S_AXI_ARADDR(S_AXI_ARADDR[15:2]),
+        .S_AXI_ARESETN(S_AXI_ARESETN),
+        .S_AXI_ARVALID(S_AXI_ARVALID),
+        .S_AXI_AWADDR(S_AXI_AWADDR[15:2]),
+        .S_AXI_AWVALID(S_AXI_AWVALID),
+        .S_AXI_BREADY(S_AXI_BREADY),
+        .S_AXI_RDATA(S_AXI_RDATA),
+        .S_AXI_RREADY(S_AXI_RREADY),
+        .S_AXI_RVALID(S_AXI_RVALID),
+        .S_AXI_WDATA(S_AXI_WDATA),
+        .S_AXI_WVALID(S_AXI_WVALID),
+        .out({S_AXI_BVALID,S_AXI_WREADY}));
+  VCC VCC
+       (.P(\<const1> ));
+endmodule
+
 module design_1_axi_derivative_0_0_fi_sub
    (\S_AXI_RDATA[1] ,
     CO,
@@ -937,7 +935,6 @@ module design_1_axi_derivative_0_0_fi_sub
         .S(\slv_out_reg[0][31] ));
 endmodule
 
-(* ORIG_REF_NAME = "mm_derivative" *) 
 module design_1_axi_derivative_0_0_mm_derivative
    (S_AXI_RDATA,
     \S_AXI_RDATA[1] ,

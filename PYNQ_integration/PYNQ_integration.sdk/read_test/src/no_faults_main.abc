@@ -1,0 +1,42 @@
+
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_printf.h"
+//#include "zscore_driver.h"
+//#include "cusum_driver.h"
+//#include "derivative_driver.h"
+#include "ubc.h"
+#include "sleep.h"
+
+XGpio Gpio; /* The Instance of the GPIO Driver */
+
+
+int main(void){
+	int Status;
+	u32 anomaly_result;
+	int i,j,k,m;
+	u32 data;
+
+	/* Initialize the GPIO driver */
+	Status = XGpio_Initialize(&Gpio, XPAR_GPIO_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	/* Set the direction for all signals as inputs except the LED output */
+	XGpio_SetDataDirection(&Gpio, 1, 0xFFFF);
+
+	ubc_setup(8, 8, 8, 132);
+
+
+
+	while(1){
+		data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
+		ubc_addData(data);
+		anomaly_result = ubc_detectAnomaly(8, 8, 8);
+		sleep(1);
+	}
+
+}

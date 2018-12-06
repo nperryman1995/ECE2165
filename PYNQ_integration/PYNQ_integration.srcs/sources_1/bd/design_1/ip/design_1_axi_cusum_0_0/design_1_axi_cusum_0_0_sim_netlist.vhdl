@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Tue Dec  4 17:11:18 2018
+-- Date        : Tue Dec  4 17:11:16 2018
 -- Host        : DESKTOP-JBV9JL2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Mitch/Documents/DCA/PYNQ_integration/PYNQ_integration.srcs/sources_1/bd/design_1/ip/design_1_axi_cusum_0_0/design_1_axi_cusum_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_cusum_0_0 -prefix
+--               design_1_axi_cusum_0_0_ design_1_axi_cusum_0_0_sim_netlist.vhdl
 -- Design      : design_1_axi_cusum_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -63,8 +63,6 @@ entity design_1_axi_cusum_0_0_mm_cusum is
     \out\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_AXI_WVALID : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_cusum_0_0_mm_cusum : entity is "mm_cusum";
 end design_1_axi_cusum_0_0_mm_cusum;
 
 architecture STRUCTURE of design_1_axi_cusum_0_0_mm_cusum is
@@ -45351,8 +45349,6 @@ entity design_1_axi_cusum_0_0_axi_cusum is
     S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     subRes : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_cusum_0_0_axi_cusum : entity is "axi_cusum";
 end design_1_axi_cusum_0_0_axi_cusum;
 
 architecture STRUCTURE of design_1_axi_cusum_0_0_axi_cusum is

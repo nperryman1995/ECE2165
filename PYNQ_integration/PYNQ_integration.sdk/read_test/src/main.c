@@ -12,6 +12,7 @@
 //#include "cusum_driver.h"
 //#include "derivative_driver.h"
 #include "ubc.h"
+#include "sleep.h"
 
 XGpio Gpio; /* The Instance of the GPIO Driver */
 //u32 *zscore_baseaddr = (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR;
@@ -105,6 +106,7 @@ int main(void){
 			}
 			results[k][i] = j;
 			ubc_reset_all_blocks();
+			sleep(1);
 		}
 	}
 	double avg_zscore_fail = 0;
@@ -119,76 +121,4 @@ int main(void){
 	avg_cusum_fail /= TRIALS_PER_BLOCK;
 	avg_deriv_fail /= TRIALS_PER_BLOCK;
 	while(1);
-
-
-
-
-
-
-
-
-
-
-
-	//while(1){
-		//data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
-		//ubc_addData(data);
-		//anomaly_result = ubc_detectAnomaly(8, 8, 8);
-	//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//	Zscore_setup(&zs_ctrl, (u32 *)XPAR_AXI_ZSCORE_0_BASEADDR, 8);
-//	Cusum_setup(&cs_ctrl, (u32 *)XPAR_AXI_CUSUM_0_BASEADDR, 8, 8, 10);
-//	Deriv_setup(&dr_ctrl, (u32 *)XPAR_AXI_DERIVATIVE_0_BASEADDR);
-//	for(i=0;i<64;i++){
-//		data = Zscore_getStandardDev(&zs_ctrl);
-//		data = Cusum_getVal(&cs_ctrl);
-//		data = Deriv_getVal(&dr_ctrl);
-//		Zscore_addData(&zs_ctrl, data_array[i%8] + i*100);
-//		Cusum_addData(&cs_ctrl, data_array[i%8] + i*100);
-//		Deriv_addData(&dr_ctrl, data_array[i%8] + i*100);
-//	}
-//	data = Zscore_getStandardDev(&zs_ctrl);
-//	data = Cusum_getVal(&cs_ctrl);
-//	data = Deriv_getVal(&dr_ctrl);
-
-	//while(1){
-	//	data = (0xFF) & XGpio_DiscreteRead(&Gpio, 1);
-		//for(i=0;i<100000;i++);//delay
-	//}
-	//for(i=0;i<8;i++){
-	//	*(zscore_baseaddr+3+i) = (data_array[i])<<16;
-	//}
-//	*(zscore_baseaddr+3) = (data_array[2])<<16;
-//	*(zscore_baseaddr+4) = (data_array[3])<<16;
-//	*(zscore_baseaddr+5) = (data_array[4])<<16;
-//	*(zscore_baseaddr+6) = (data_array[5])<<16;
-//	mean = *(zscore_baseaddr);
-//	std_sqr = *(zscore_baseaddr+2);
-//	other = *(zscore_baseaddr+1);
-
 }

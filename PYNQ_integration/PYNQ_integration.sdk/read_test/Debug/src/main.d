@@ -14,7 +14,8 @@ src/main.o src/main.o: ../src/main.c \
  ../../read_test_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../../read_test_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
  ../../read_test_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/ubc.h \
- ../../read_test_bsp/ps7_cortexa9_0/include/xil_types.h
+ ../../read_test_bsp/ps7_cortexa9_0/include/xil_types.h \
+ ../../read_test_bsp/ps7_cortexa9_0/include/sleep.h
 
 ../../read_test_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -49,3 +50,5 @@ src/main.o src/main.o: ../src/main.c \
 ../src/ubc.h:
 
 ../../read_test_bsp/ps7_cortexa9_0/include/xil_types.h:
+
+../../read_test_bsp/ps7_cortexa9_0/include/sleep.h:
